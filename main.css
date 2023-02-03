@@ -1,4 +1,4 @@
-.wrapper_main-top{
+header{
   background-color: #92D050;
   display: flex;
   align-items: center;
@@ -7,13 +7,13 @@
 .logo_img{
   width: 100px; 
 }
-.wrapper_main-top nav{
+header nav{
   margin-left: auto;
 }
-.wrapper_main-top ul{
+header ul{
   display: flex;
 }
-.wrapper_main-top ul>li{
+header ul>li{
   list-style-type: none;
   margin-right: 20px;
 }
