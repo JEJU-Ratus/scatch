@@ -3,7 +3,9 @@ header{
   display: flex;
   align-items: center;
 }
-
+footer{
+  background-color: #92D050;
+}
 .logo_img{
   width: 100px; 
 }
@@ -16,4 +18,12 @@ header ul{
 header ul>li{
   list-style-type: none;
   margin-right: 20px;
+}
+.main-area{
+  width: 1280px;
+  height: 1080px;
+  background-color: yellow;
+}
+footer img{
+  margin-left: auto;
 }
