@@ -25,7 +25,7 @@ header ul>li{ /* 상단영역 메뉴 배치 */
   list-style-type: none;
   margin-right: 20px;
 }
-.cont_main{
+.wrap_main{
   margin: 0 20px;
 }
 .cont_ad{/* 광고영역 */

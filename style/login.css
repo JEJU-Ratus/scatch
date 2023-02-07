@@ -1,7 +1,7 @@
 .wrap_login{
   display: flex;
   justify-content: center;
-  margin: 150px 0 300px;
+  margin: 150px 20px 300px;
 }
 .cont_login{
   text-align: center;
