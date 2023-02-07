@@ -19,7 +19,3 @@
 .cont_login li:last-child::after{
   content: '';
 }
-.copyright{
-  text-align: center;
-  color: gray;
-}

@@ -42,3 +42,7 @@ header ul>li{ /* 상단영역 메뉴 배치 */
 footer img{ /* 하단영역 마스코트 위치설정 */
   margin-left: auto;
 }
+.copyright{
+  text-align: center;
+  color: gray;
+}
