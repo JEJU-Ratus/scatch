@@ -5,9 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Scatch - 스캐치</title>
+  <title>Document</title>
+  <link rel="stylesheet" href="style/login.css">
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/reset.css">
+
 </head>
 
 <body>
@@ -19,7 +21,6 @@
         <!-- 로고 -->
         <a href="index.html">
           <img class="wrap_logo" src="./images/logo.png" alt="스캐치 로고 이미지">
-
         </a>
       </h1>
       <nav>
@@ -34,17 +35,34 @@
   </header>
 
   <main>
-    <div class="wrap_main">
-      <!-- 메인영역 구조 -->
-      <div class="cont_ad">광고배너 영역</div>
-      <!-- 광고 배너 영역 -->
-
-      <section class="cont_contents">
-        <!-- 메인 영역 -->
-        <h2>메인영역</h2>
+    <div class="wrap_login">
+      <!-- 로그인 영역 구조 -->
+      <section class="cont_login">
+        <!-- 로그인 영역 -->
+        <h2>로그인</h2>
+        <form action="https://eo48xexcwricnxm.m.pipedream.net/" method="post">
+          <div class="wrap_id">
+            <!-- 아이디 입력 -->
+            <label for="id_text">아이디</label>
+            <input id="id_text" type="text" name="id" pattern="^([a-z0-9_]){8,50}$" placeholder="아이디를 입력하세요.">
+          </div>
+          <div class="wrap_pw">
+            <label for="pw_text">비밀번호</label>
+            <input id="pw_text" type="password" name="pw"
+              pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_-+=[]{}~?:;`|/]).{9,50}$"
+              placeholder="비밀번호를 입력하세요.">
+          </div>
+          <button>로그인</button>
+        </form>
+        <ul>
+          <li><a href="#">아이디 찾기</a></li>
+          <li><a href="#">비밀번호 찾기</a></li>
+          <li><a href="join.html">회원가입</a></li>
+        </ul>
       </section>
     </div>
   </main>
+
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
     <div class="cont_frame">
@@ -58,11 +76,16 @@
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
 
-  <script defer src="/__/firebase/9.17.1/firebase-app.js"></script>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
   <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.17.1/firebase-auth.js"></script>
-  <script defer src="/__/firebase/9.17.1/firebase-firestore.js"></script>
-  <script defer src="/__/firebase/9.17.1/firebase-storage.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
+
+  <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
+
+  <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
+
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
@@ -82,7 +105,7 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
   </script>
-
 </body>
+
 
 </html>

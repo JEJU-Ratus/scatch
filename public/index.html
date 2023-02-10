@@ -5,8 +5,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style/join.css">
+  <title>Scatch - 스캐치</title>
   <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/reset.css">
 </head>
@@ -20,6 +19,7 @@
         <!-- 로고 -->
         <a href="index.html">
           <img class="wrap_logo" src="./images/logo.png" alt="스캐치 로고 이미지">
+
         </a>
       </h1>
       <nav>
@@ -34,62 +34,15 @@
   </header>
 
   <main>
-    <div class="wrap_join">
+    <div class="wrap_main">
       <!-- 메인영역 구조 -->
-      <section class="cont_join">
-        <h2>회원가입</h2>
-        <form action="https://eo48xexcwricnxm.m.pipedream.net/" method="post">
-            <!-- 회원 가입 폼 -->
-          <div>
-            <!-- 아이디 입력 폼 -->
-            <h3>
-              <label for="id">아이디</label>
-            </h3>
-            <input type="text" id="id_text" type="text" name="id" pattern="^([a-z0-9_]){8,20}$">
-            <span>*영문소문자, 숫자, 언더바(_) 8~20자</span>
-          </div>
-          <div>
-            <!-- 비밀번호 입력 폼 -->
-            <h3>
-              <label for="pw_text">비밀번호</label>
-            </h3>
-            <input id="pw_text" type="password" name="pw1"
-              pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_-+=[]{}~?:;`|/]).{9,50}$">
-            <span>*영문 대소문자, 숫자, 특수문자를 꼭 포함하여 9~50자</span>
-          </div>
-          <div>
-            <!-- 비밀번호 확인 폼 -->
-            <h3>
-              <label for="pw_test">비밀번호 확인</label>
-            </h3>
-            <input id="pw_test" type="password" name="pw2"
-              pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&*()_-+=[]{}~?:;`|/]).{9,50}$">
-          </div>
-          <div>
-            <!-- 이름 입력 폼 -->
-            <h3>
-              <label for="name">이름</label>
-            </h3>
-            <!-- 자바로 한글 정규식 넣어야함. -->
-            <input type="text" id="name" name="name" maxlength="30">
-          </div>
-          <div>
-            <!-- 전화번호 입력 폼 이것도 자바로 하면 쉬움 -->
-            <h3>
-              <label for="phone">휴대전화</label>
-            </h3>
-            <input type="tel" id=" phone">
-          </div>
-          <div>
-            <h3>
-              <label for="email">이메일</label>
-            </h3>
-            <input type="email" id="email" name="email">
-          </div>
-          
-        </form>
-      </section>
+      <div class="cont_ad">광고배너 영역</div>
+      <!-- 광고 배너 영역 -->
 
+      <section class="cont_contents">
+        <!-- 메인 영역 -->
+        <h2>메인영역</h2>
+      </section>
     </div>
   </main>
   <footer>
@@ -105,11 +58,16 @@
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
 
-  <script defer src="/__/firebase/9.17.1/firebase-app.js"></script>
+
+  <!-- update the version number as needed -->
+  <script defer src="/__/firebase/9.17.1/firebase-app-compat.js"></script>
   <!-- include only the Firebase features as you need -->
-  <script defer src="/__/firebase/9.17.1/firebase-auth.js"></script>
-  <script defer src="/__/firebase/9.17.1/firebase-firestore.js"></script>
-  <script defer src="/__/firebase/9.17.1/firebase-storage.js"></script>
+  <script defer src="/__/firebase/9.17.1/firebase-auth-compat.js"></script>
+
+  <script defer src="/__/firebase/9.17.1/firebase-firestore-compat.js"></script>
+
+  <script defer src="/__/firebase/9.17.1/firebase-storage-compat.js"></script>
+
   <script type="module">
     // Import the functions you need from the SDKs you need
     import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.1/firebase-app.js";
@@ -129,7 +87,8 @@
     // Initialize Firebase
     const app = initializeApp(firebaseConfig);
   </script>
-  
+
+
 </body>
 
 </html>
