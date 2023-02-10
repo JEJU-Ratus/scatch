@@ -1,0 +1,11 @@
+.wrap_join{
+  display: flex;
+  justify-content: center;
+}
+.cont_join{
+  margin: 150px 20px 300px;
+  border: 2px solid ;
+}
+.cont_birth{
+  display: flex;
+}

@@ -1,0 +1,21 @@
+.wrap_login{
+  display: flex;
+  justify-content: center;
+  margin: 150px 20px 300px;
+}
+.cont_login{
+  text-align: center;
+  border: 2px solid ;
+  
+}
+.cont_login > ul{
+  display: flex;
+  list-style-type: none;
+}
+.cont_login li::after{
+  content: '｜';
+  color: gray;
+}
+.cont_login li:last-child::after{
+  content: '';
+}
