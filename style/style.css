@@ -3,6 +3,7 @@
   position: relative;
 }
 header {/* 상단영역 배경 */
+  padding: 18px 0;
   background-color: #92D050;
   position: fixed;
   top: 0;
@@ -28,7 +29,7 @@ h1 { /* 로고 */
   display: inline-block;
 }
 .wrap_logo{ /* 상단영역 로고 */
-  width: 100px; 
+  width: 150px; 
 }
 header ul{/* 상단영역 메뉴 배치 */
   display: flex;
@@ -53,6 +54,7 @@ header ul>li{ /* 상단영역 메뉴 배치 */
 }
 footer img{ /* 하단영역 마스코트 위치설정 */
   margin-left: auto;
+  width: 300px;
 }
 .copyright{
   text-align: center;
