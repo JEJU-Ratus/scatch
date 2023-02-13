@@ -1,0 +1,27 @@
+.wrap_finish{
+  display: flex;
+  justify-content: center;
+}
+.cont_finish{
+  margin: 150px 20px 300px;
+  border: 2px solid ;
+}
+.cont_finish h2{
+  text-align: center;
+  font-size: 35px;
+  border-bottom: solid 2px;
+}
+.cont_finish img{
+  margin: 70px auto 0;
+  width: 250px;
+}
+.cont_finish p{
+  text-align: center;
+  font-size: 35px;
+}
+.cont_finish ul{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 40px;
+  list-style-type: none;
+}
