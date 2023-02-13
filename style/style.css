@@ -11,13 +11,14 @@ header {/* 상단영역 배경 */
   right: 0;
 }
 main{
-  padding-bottom: 191.7px;
+  padding-bottom: 220px;
 }
 footer{/* 하단영역 배경 */
   background-color: #92D050;
   position:absolute;
   bottom: 0;
   width: 100%;
+  padding: 14.3px 0;
 }
 .cont_frame{/* 상단 헤더 영역 및 하단 푸터 영역  */
   display: flex;
