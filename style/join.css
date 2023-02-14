@@ -1,11 +1,20 @@
+#signUpButton{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+}
 .wrap_join{
   display: flex;
   justify-content: center;
 }
 .cont_join{
   margin: 150px 20px 300px;
+  padding: 20px;
   border: 2px solid ;
 }
 .cont_birth{
   display: flex;
+}
+legend{
+  text-align: center;
 }

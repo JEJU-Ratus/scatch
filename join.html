@@ -5,15 +5,6 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="Expires" content="Mon, 06 Jan 1990 00:00:01 GMT">
-  <!-- # 위의 명시된 날짜 이후가 되면 페이지가 캐싱되지 않습니다.
-(따라서 위와 같은 날짜로 지정할 경우 페이지는 지속적으로 캐싱되지 않습니다.) -->
-  <meta http-equiv="Expires" content="-1">
-  <!-- # 캐시된 페이지가 만료되어 삭제되는 시간을 정의합니다. 특별한 경우가 아니면 -1로 설정합니다. -->
-  <meta http-equiv="Pragma" content="no-cache">
-  <!-- # 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.0) -->
-  <meta http-equiv="Cache-Control" content="no-cache">
-  <!-- # 페이지 로드시마다 페이지를 캐싱하지 않습니다. (HTTP 1.1) -->
   <title>Document</title>
   <link rel="stylesheet" href="style/join.css">
   <link rel="stylesheet" href="style/style.css">
@@ -44,9 +35,9 @@
     <main>
       <div class="wrap_join">
         <!-- 메인영역 구조 -->
-        <section class="cont_join">
-          <h2>회원가입</h2>
-          <form>
+        <fieldset class="cont_join">
+          <legend>회원가입</legend>
+          <form action="join-finish.html" method="post" onsubmit="return joinform_check()">
             <!-- 회원 가입 폼 -->
             <div>
               <!-- 아이디 입력 폼 -->
@@ -55,15 +46,14 @@
                 <h3>
                   <label for="name">이름</label>
                 </h3>
-                <!-- 자바로 한글 정규식 넣어야함. -->
-                <input type="text" id="name" name="name" maxlength="30">
+                <input type="text" id="name" name="name" maxlength="30" required>
               </div>
               <div>
                 <h3>
                   <label>생년월일</label>
                 </h3>
-                <input type="text" name="yy" id="yy" placeholder="년(4자)" maxlength="4">
-                <select name="mm" id="mm">
+                <input type="text" name="yy" id="yy" placeholder="년(4자)" maxlength="4" required>
+                <select name="mm" id="mm" required>
                   <option value="">월</option>
                   <option value="01">1</option>
                   <option value="02">2</option>
@@ -80,28 +70,28 @@
                 </select>
 
                 <label for="dd"></label>
-                <input type="text" name="dd" id="dd" placeholder="일" maxlength="2">
+                <input type="text" name="dd" id="dd" placeholder="일" maxlength="2" required>
               </div>
               <h3>
-                <label for="id_text">아이디</label>
+                <label for="uid">아이디</label>
               </h3>
-              <input type="text" id="id_text" name="id_text">
+              <input type="text" id="uid" name="uid" required>
               <span>*영문소문자, 숫자, 언더바(_) 8~20자</span>
             </div>
             <div>
               <!-- 비밀번호 입력 폼 -->
               <h3>
-                <label for="pw_text">비밀번호</label>
+                <label for="pwd">비밀번호</label>
               </h3>
-              <input id="pw_text" type="password" name="pw1">
+              <input id="pwd" type="password" name="pwd" required>
               <span>*영문 대소문자, 숫자, 특수문자를 꼭 포함하여 9~50자</span>
             </div>
             <div>
               <!-- 비밀번호 확인 폼 -->
               <h3>
-                <label for="pw_test">비밀번호 확인</label>
+                <label for="pwdcheck">비밀번호 확인</label>
               </h3>
-              <input id="pw_test" type="password" name="pw2">
+              <input id="pwdcheck" type="password" name="pwdcheck" required>
             </div>
 
             <div>
@@ -109,17 +99,17 @@
               <h3>
                 <label for="tel">휴대전화</label>
               </h3>
-              <input type="tel" id="tel" name="tel">
+              <input type="tel" id="tel" name="tel required">
             </div>
             <div>
               <h3>
                 <label for="email">이메일</label>
               </h3>
-              <input type="email" id="email" name="email">
+              <input type="email" id="email" name="email" required>
             </div>
             <button id="signUpButton">회원가입</button>
           </form>
-        </section>
+        </fieldset>
 
       </div>
     </main>
