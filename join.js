@@ -1,3 +1,4 @@
+
 function joinform_check() {
   const uname = document.querySelector('#name'); //이름 파라미터의 값를 가져옴.
 
