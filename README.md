@@ -41,4 +41,5 @@
 
 - test 페이지 하나 만듦. 기능 테스트 용 페이지로 홈페이지 진행에는 문제 없음. 추후 삭제 예정.
 
-- netlify 에서 action이 작동 안하는 오류 발견
+- netlify 에서 action이 작동 안하는 오류 발견 
+   - 수정 완료. form 태그에 data-netlify="true"를 추가하니 정상 작동 하기 시작
