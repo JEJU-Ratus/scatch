@@ -8,8 +8,11 @@
   border: 2px solid ;
   
 }
-legend{
-  text-align: center;
+.cont_login h2{
+  border-bottom: 2px solid;
+}
+.wrap_id{
+  margin-top: 10px;
 }
 .cont_login > ul{
   display: flex;
