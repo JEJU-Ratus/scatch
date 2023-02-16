@@ -8,6 +8,9 @@
   border: 2px solid ;
   
 }
+legend{
+  text-align: center;
+}
 .cont_login > ul{
   display: flex;
   list-style-type: none;
