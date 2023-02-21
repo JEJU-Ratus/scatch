@@ -25,3 +25,9 @@
 .cont_login li:last-child::after{
   content: '';
 }
+.error{
+  color: red;
+}
+.fold{
+  display: none;
+}

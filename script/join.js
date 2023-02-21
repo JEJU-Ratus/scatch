@@ -1,124 +1,343 @@
-//유효성 검사 함수
-function joinForm_check() {
-  const uname = document.querySelector('#name'); //이름 파라미터의 연동
-  const year = document.querySelector('#yy'); // 생년월일의 연도 파라미터 연동
-  const month = document.querySelector('#mm')
-  const day = document.querySelector('#dd'); // 생년월일의 일자 파라미터 연동
-  const uid = document.querySelector('#uid'); // 사용자 아이디 파라미터 연동
-  const pwd = document.querySelector('#pwd'); // 비밀번호 파라미터 연동
-  const pwdCheck = document.querySelector('#pwdCheck'); // 비밀번호확인 파라미터 연동
-  const tel = document.querySelector('#tel'); // 전화번호 파라미터 연동
-  const email = document.querySelector('#email'); //email 파라미터 연동
-  
-  const REG_NAME= /^[가-힣]{2,30}$/; // 이름 규칙
-  const REG_YEAR= /^(19[0-9][0-9]|20\d{2})$/; // 생년월일 중 연도 규칙
-  const REG_DAY = /^([1-9]|[1-2][0-9]|3[0-1])$/ // 생년월일 중 일 규칙
-  const REG_UID = /^[a-z0-9]{1}[a-z0-9_-]{4,20}$/; // user ID 규칙
-  const REG_PWD = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#])[\da-zA-Z!@#]{9,20}$/;
-  const REG_TEL = /^(010|011|016|017|018|019)(\d{3}|\d{4})(\d{4})/;
-  //하단은 RFC 5322 이메일 검증 양식을 이용함.
-  const REG_EMAIL = /^((?:[A-Za-z0-9!#$%&'*+\-\/=?^_`{|}~]|(?<=^|\.)"|"(?=$|\.|@)|(?<=".*)[ .](?=.*")|(?<!\.)\.){1,64})(@)((?:[A-Za-z0-9.\-])*(?:[A-Za-z0-9])\.(?:[A-Za-z0-9]){2,})$/;
-  let checkAll = true; // 유효성 검사 결과 최종 값이 들어갈 곳. 기본값 true
+const uname = document.getElementById('name'); //이름 파라미터의 연동
+const year = document.getElementById('yy'); // 생년월일의 연도 파라미터 연동
+const month = document.getElementById('mm')
+const day = document.getElementById('dd'); // 생년월일의 일자 파라미터 연동
+const uid = document.getElementById('uid'); // 사용자 아이디 파라미터 연동
+const pwd = document.getElementById('pwd'); // 비밀번호 파라미터 연동
+const pwdCheck = document.getElementById('pwdCheck'); // 비밀번호확인 파라미터 연동
+const tel = document.getElementById('tel'); // 전화번호 파라미터 연동
+const email = document.getElementById('email'); //email 파라미터 연동
 
+//유효성 검증증
+const REG_NAME = /^[가-힣]{2,30}$/; // 이름 규칙
+const REG_YEAR = /^(19[0-9][0-9]|20\d{2})$/; // 생년월일 중 연도 규칙
+const REG_DAY = /^([1-9]|[1-2][0-9]|3[0-1])$/ // 생년월일 중 일 규칙
+const REG_UID = /^[a-z0-9]{1}[a-z0-9_-]{4,20}$/; // user ID 규칙
+const REG_PWD = /^(?=.*\d)(?=.*[a-z])(?=.*[!@#])[\da-zA-Z!@#]{9,20}$/;
+const REG_TEL = /^(010|011|016|017|018|019)(\d{3}|\d{4})(\d{4})/;
 
-  if (!uname.value){
-    alert("이름을 입력하세요.");
-    uname.focus();
-    checkAll = false;
-  }
-  else if (!REG_NAME.test(uname.value)) { // 이름 규칙 확인
-    alert("이름은 한글 2~30자 이내로 작성해주세요."); // 창띄우기
-    uname.focus(); // 이름으로 돌아가기
-    checkAll = false;
-  }
-  else if (!year.value){
-    alert("태어난 년도 4자리를 입력하세요.");
-    year.focus();
-    checkAll = false;
-  }
-  else if(!REG_YEAR.test(year.value)){
-    alert("연도를 정확하게 입력해주세요. 예)1999, 2023, ...");
-    year.focus();
-    checkAll = false;
-    console.log(checkAll);
-  }
-  else if (!month.value){
-    alert("월를 입력하세요");
-    month.focus();
-    checkAll = false;
-  }
-  else if (!day.value){
-    alert("태어난 일자를 입력하세요");
-    day.focus();
-    checkAll = false;
-  }
-  else if(!REG_DAY.test(dd.value)){
-    alert("일자를 정확하게 입력해주세요. 예)1~31 ...");
-    day.focus();
-    checkAll = false;
-  }
-  else if (!uid.value){
-    alert("아이디를 입력하세요");
-    uid.focus();
-    checkAll = false;
-  }
-  else if(!REG_UID.test(uid.value)){
-    alert("아이디는 영문 소문자로 시작하며 5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.");
-      uid.focus();
-      checkAll = false;
+//하단은 RFC 5322 이메일 검증 양식을 이용함.
+const REG_EMAIL = /^((?:[A-Za-z0-9!#$%&'*+\-\/=?^_`{|}~]|(?<=^|\.)"|"(?=$|\.|@)|(?<=".*)[ .](?=.*")|(?<!\.)\.){1,64})(@)((?:[A-Za-z0-9.\-])*(?:[A-Za-z0-9])\.(?:[A-Za-z0-9]){2,})$/;
+
+// 경고메시지 연동
+const nameBlank = document.getElementById('nameBlank');
+const nameReg = document.getElementById('nameReg');
+const yearBlank = document.getElementById('yearBlank');
+const yearReg = document.getElementById('yearReg');
+const monthBlank = document.getElementById('monthBlank');
+const dayBlank = document.getElementById('dayBlank');
+const dayReg = document.getElementById('dayReg');
+const uidBlank = document.getElementById('uidBlank');
+const uidReg = document.getElementById('uidReg');
+const pwdBlank = document.getElementById('pwdBlank');
+const pwdReg = document.getElementById('pwdReg');
+const pwdCheckBlank = document.getElementById('pwdCheckBlank');
+const pwdCheckFalse = document.getElementById('pwdCheckFalse');
+const telBlank = document.getElementById('telBlank');
+const telReg = document.getElementById('telReg');
+const emailBlank = document.getElementById('emailBlank');
+const emailReg = document.getElementById('emailReg');
+
+// 성공 메시지 연동
+const nameSuccess = document.getElementById('nameSuccess');
+const birthSuccess = document.getElementById('birthSuccess');
+const uidSuccess = document.getElementById('uidSuccess');
+const pwdSuccess = document.getElementById('pwdSuccess');
+const pwdCheckSuccess = document.getElementById('pwdCheckSuccess');
+const telSuccess = document.getElementById('telSuccess');
+const emailSuccess = document.getElementById('emailSuccess');
+
+let checkAll = []; // 유효성 결과 체크
+let finalCheck = true; // 최종 결과
+// 이벤트 핸들러(focusout)
+uname.addEventListener('focusout',input_name);
+year.addEventListener('focusout',input_year);
+month.addEventListener('focusout',input_year);
+day.addEventListener('focusout',input_year);
+uid.addEventListener('focusout',input_uid);
+pwd.addEventListener('focusout',input_pwd);
+pwdCheck.addEventListener('focusout',input_pwdCheck);
+tel.addEventListener('focusout',input_tel);
+email.addEventListener('focusout',input_email);
+
+// 이벤트 핸들러(focus())
+
+function input_focus(){
+const inputFocus = document.querySelectorAll('.focus');
+
+  for(i = 0 ; i < inputFocus.length; i++) {
+    if(!inputFocus[i].value){
+      inputFocus[i].focus();
+      return;
     }
-  else if (!pwd.value){
-    alert("비밀번호를 입력하세요");
-    pwd.focus();
-    checkAll = false;
-  }
-  
-  else if(!REG_PWD.test(pwd.value)){
-    alert("비밀번호는 영문 대소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자로 해야합니다.");
-    pwd.focus();
-    checkAll = false;
-  }
-  else if (!pwdCheck.value){
-    alert("비밀번호 확인란을 입력하세요");
-    pwdCheck.focus();
-    checkAll = false;
-  }
-  else if(pwd.value !== pwdCheck.value){
-    alert("비밀번호가 일치하지 않습니다. 다시 시도해주세요.");
-    pwdCheck.focus();
-    checkAll = false;
-  }
-  else if (!tel.value){
-    alert("전화번호를 입력하세요");
-    tel.focus();
-    checkAll = false;
-  }
-  else if(!REG_TEL.test(tel.value)){
-    alert("전화번호 형식이 잘못되었습니다. 예)01034567890");
-    tel.focus();
-    checkAll = false;
-  }
-  else if (!email.value){
-    alert("이메일을 입력하세요");
-    email.focus();
-    checkAll = false;
-  }
-  else if(!REG_EMAIL.test(email.value)){
-    alert("이메일 형식이 잘못되었습니다.");
-    email.focus();
-    checkAll = false;
-  }
-
-  if(!checkAll){
-    return false;
   }
 }
 
 
+
+//유효성 검사 함수
+function joinForm_check() {
+  input_name(); // 이름
+  input_year(); // 생년월일
+  input_uid(); // 아이디
+  input_pwd();// 비밀번호
+  input_pwdCheck();// 비밀번호 확인
+  input_tel();// 전화번호
+  input_email();// 이메일
+  
+
+
+  for (i = 0; i <= checkAll.length; i++) {
+    if (!checkAll[i]) {// 유효성 통과 체크
+      finalCheck = checkAll[i];
+      break;
+    }
+  }
+  input_focus();
+
+  return finalCheck;
+}
+
+function input_name() {
+  // 이름 유효성 테스트 및 결과 메시지 출력
+
+  if (!REG_NAME.test(uname.value)) { // 이름 규칙 확인
+    if (!uname.value) {
+      nameBlank.classList.remove('fold'); // 이름을 입력하세요 - 펼치기
+      nameReg.classList.add('fold'); // 이름은 한글 2~30자 이내로 작성해주세요. - 가리기
+      nameSuccess.classList.add('fold');
+      checkAll[0] = false;
+    }
+    else {
+      nameBlank.classList.add('fold');// 이름은 한글 2~30자 이내로 작성해주세요. - 펼치기
+      nameReg.classList.remove('fold'); //이름을 입력하세요 - 가리기
+      nameSuccess.classList.add('fold');// 이름으로 돌아가기
+
+      checkAll[0] = false;
+    }
+  }
+  else {
+    nameBlank.classList.add('fold');
+    nameReg.classList.add('fold');
+    nameSuccess.classList.remove('fold');
+    checkAll[0] = true;
+  }
+}
+function input_year() {
+  // 생년월일 유효성 테스트 및 결과 메시지 출력
+  if (!REG_YEAR.test(year.value)) {
+    if (!year.value) {
+      yearBlank.classList.remove('fold');
+      yearReg.classList.add('fold');
+      monthBlank.classList.add('fold');
+      dayBlank.classList.add('fold');
+      dayReg.classList.add('fold');
+      birthSuccess.classList.add('fold');
+
+      checkAll[1] = false;
+    }
+    else {
+      yearBlank.classList.add('fold');
+      yearReg.classList.remove('fold');
+      monthBlank.classList.add('fold');
+      dayBlank.classList.add('fold');
+      dayReg.classList.add('fold');
+      birthSuccess.classList.add('fold');
+
+      checkAll[1] = false;
+    }
+  }
+  else {
+    input_month();
+  }
+}
+function input_month() {
+  if (!month.value) {
+    yearBlank.classList.add('fold');
+    yearReg.classList.add('fold');
+    monthBlank.classList.remove('fold');
+    dayBlank.classList.add('fold');
+    dayReg.classList.add('fold');
+    birthSuccess.classList.add('fold');
+
+    checkAll[1] = false;
+  }
+    else {
+      input_day();
+    }
+}
+function input_day() {
+  if (!REG_DAY.test(dd.value)) {
+    if (!day.value) {
+      yearBlank.classList.add('fold');
+      yearReg.classList.add('fold');
+      monthBlank.classList.add('fold');
+      dayBlank.classList.remove('fold');
+      dayReg.classList.add('fold');
+      birthSuccess.classList.add('fold');
+
+      checkAll[1] = false;
+    }
+    else {
+      yearBlank.classList.add('fold');
+      yearReg.classList.add('fold');
+      monthBlank.classList.add('fold');
+      dayBlank.classList.add('fold');
+      dayReg.classList.remove('fold');
+      birthSuccess.classList.add('fold');
+
+      checkAll[1] = false;
+    }
+  }
+  else {
+    yearBlank.classList.add('fold');
+    yearReg.classList.add('fold');
+    monthBlank.classList.add('fold');
+    dayBlank.classList.add('fold');
+    dayReg.classList.add('fold');
+    birthSuccess.classList.remove('fold');
+    checkAll[1] = true;
+  }
+}
+function input_uid() {
+  // 아이디 유효성 테스트 및 결과 메시지 출력
+
+  if (!REG_UID.test(uid.value)) {
+    if (!uid.value) {
+      uidBlank.classList.remove('fold');
+      uidReg.classList.add('fold');
+      uidSuccess.classList.add('fold');
+
+      checkAll[2] = false;
+    }
+    else {
+      uidBlank.classList.add('fold');
+      uidReg.classList.remove('fold');
+      uidSuccess.classList.add('fold');
+
+      checkAll[2] = false;
+    }
+  }
+  else {
+    uidBlank.classList.add('fold');
+    uidReg.classList.add('fold');
+    uidSuccess.classList.remove('fold');
+    checkAll[2] = true;
+  }
+
+}
+function input_pwd() {
+  // 비밀번호 유효성 검사 및 결과 출력
+  if (!REG_PWD.test(pwd.value)) {
+    if (!pwd.value) {
+      pwdBlank.classList.remove('fold');
+      pwdReg.classList.add('fold');
+      pwdSuccess.classList.add('fold');
+
+      checkAll[3] = false;
+    }
+    else {
+      pwdBlank.classList.add('fold');
+      pwdReg.classList.remove('fold');
+      pwdSuccess.classList.add('fold');
+
+      checkAll[3] = false;
+    }
+  }
+  else {
+    pwdBlank.classList.add('fold');
+    pwdReg.classList.add('fold');
+    pwdSuccess.classList.remove('fold');
+    checkAll[3] = true;
+  }
+}
+function input_pwdCheck(){
+  // 비밀번호 재확인 및 결과 메시지 출력
+  if (pwd.value !== pwdCheck.value) {
+    if (!pwdCheck.value) {
+      pwdCheckBlank.classList.remove('fold');
+      pwdCheckFalse.classList.add('fold');
+      pwdCheckSuccess.classList.add('fold');
+
+      checkAll[4] = false;
+    }
+    else {
+      pwdCheckBlank.classList.add('fold');
+      pwdCheckFalse.classList.remove('fold');
+      pwdCheckSuccess.classList.add('fold');
+
+      checkAll[4] = false;
+    }
+  }
+  else {
+    if(!pwdCheck.value){
+      pwdCheckBlank.classList.add('fold');
+      pwdCheckFalse.classList.add('fold');
+      pwdCheckSuccess.classList.add('fold');
+      checkAll[4] = false;
+    }
+    else{
+      pwdCheckBlank.classList.add('fold');
+      pwdCheckFalse.classList.add('fold');
+      pwdCheckSuccess.classList.remove('fold');
+      checkAll[4] = true;
+    }
+
+  }
+}
+function input_tel(){
+  //전화번호 유효성 테스트 및 결과 메시지 출력
+  if (!REG_TEL.test(tel.value)) {
+    if (!tel.value) {
+      telBlank.classList.remove('fold');
+      telReg.classList.add('fold');
+      telSuccess.classList.add('fold');
+
+      checkAll[5] = false;
+    }
+    else {
+      telBlank.classList.add('fold');
+      telReg.classList.remove('fold');
+      telSuccess.classList.add('fold');
+
+      checkAll[5] = false;
+    }
+  }
+  else {
+    telBlank.classList.add('fold');
+    telReg.classList.add('fold');
+    telSuccess.classList.remove('fold');
+    checkAll[5] = true;
+  }
+}
+function input_email(){
+  if (!REG_EMAIL.test(email.value)) {
+    if (!email.value) {
+      emailBlank.classList.remove('fold');
+      emailReg.classList.add('fold');
+      emailSuccess.classList.add('fold');
+
+      checkAll[6] = false;
+    }
+    else {
+      emailBlank.classList.add('fold');
+      emailReg.classList.remove('fold');
+      emailSuccess.classList.add('fold');
+ 
+      checkAll[6] = false;
+    }
+  }
+  else {
+    emailBlank.classList.add('fold');
+    emailReg.classList.add('fold');
+    emailSuccess.classList.remove('fold');
+    checkAll[6] = true;
+  }
+}
 // 회원가입,로그인 - 비밀번호 표시 체크 함수
-function pwd_open(){
+function pwd_open() {
   const pword = document.getElementsByName('pwd');
-  const check = document.querySelector('#pwdOpen');
+  const check = document.getElementById('pwdOpen');
 
   if (check.checked) {
     pword.forEach(pw => {
@@ -131,3 +350,5 @@ function pwd_open(){
     })
   }
 }
+
+

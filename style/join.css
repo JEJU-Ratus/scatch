@@ -1,7 +1,5 @@
-#signUpButton{
-  display: block;
-  margin-top: 20px;
-  margin-left: auto;
+p{
+  font-size: 12px;
 }
 .wrap_join{
   display: flex;
@@ -12,9 +10,24 @@
   padding: 20px;
   border: 2px solid ;
 }
+legend{
+  text-align: center;
+}
 .cont_birth{
   display: flex;
 }
-legend{
-  text-align: center;
+.signUpButton{
+  display: block;
+  margin-top: 20px;
+  margin-left: auto;
+}
+.error{
+  color: red;
+}
+.fold{
+  display: none;
+  font-size: 12px;
+}
+.success{
+  color: green;
 }
