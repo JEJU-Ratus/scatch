@@ -62,3 +62,5 @@
 - netlify form submit 속성 수정
 
 - frame.css 로 frame에 해당하는 속성 분리
+
+- 사이트 소개 페이지 1차 완료
