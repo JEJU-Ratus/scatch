@@ -6,9 +6,9 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
-  <link rel="stylesheet" href="style/join.css">
-  <link rel="stylesheet" href="style/style.css">
   <link rel="stylesheet" href="style/reset.css">
+  <link rel="stylesheet" href="style/frame.css">
+  <link rel="stylesheet" href="style/join.css">
 </head>
 
 <body>
@@ -19,12 +19,13 @@
         <h1>
           <!-- 로고 -->
           <a href="index.html">
-            <img class="wrap_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
+            <img class="img_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
           </a>
         </h1>
         <nav>
           <!-- 메뉴 -->
           <ul>
+            <li><a href="intro.html">사이트 소개</a></li>
             <li><a href="#">판매 캐릭터</a></li>
             <li><a href="login.html">로그인</a></li>
             <li><a href="join.html">회원가입</a></li>
@@ -46,19 +47,19 @@
               </h3>
               <input type="text" id="name" name="name" maxlength="30" class="focus">
             </div>
-            <div class="error">
+            <div class="cont_error">
               <!-- 에러 메시지 -->
-              <div id="nameBlank" class="fold">
-                <p><strong>이름</strong>를 입력하세요.</p>
+              <div id="nameBlank" class="wrap_fold">
+                <span><strong>이름</strong>를 입력하세요.</span>
               </div>
-              <div id="nameReg" class="fold">
-                <p><strong>이름</strong>은 한글 2~30자 이내로 작성해주세요.</p>
+              <div id="nameReg" class="wrap_fold">
+                <span><strong>이름</strong>은 한글 2~30자 이내로 작성해주세요.</span>
               </div>
             </div>
-            <div class="success">
+            <div class="wrap_success">
               <!-- 성공 메시지 -->
-              <div id="nameSuccess" class="fold">
-                <p>좋아요!</p>
+              <div id="nameSuccess" class="wrap_fold">
+                <span>좋아요!</span>
               </div>
             </div>
             <div>
@@ -86,28 +87,28 @@
               <label for="dd"></label>
               <input type="text" name="dd" id="dd" placeholder="일" maxlength="2"  class="focus">
             </div>
-            <div class="error">
+            <div class="cont_error">
               <!-- 에러메시지 -->
-              <div id="yearBlank" class="fold">
-                <p>태어난 년도 4자리를 입력하세요.</p>
+              <div id="yearBlank" class="wrap_fold">
+                <span>태어난 년도 4자리를 입력하세요.</span>
               </div>
-              <div id="yearReg" class="fold">
-                <p>연도를 정확하게 입력해주세요. 예)1999, 2023, ...</p>
+              <div id="yearReg" class="wrap_fold">
+                <span>연도를 정확하게 입력해주세요. 예)1999, 2023, ...</span>
               </div>
-              <div id="monthBlank" class="fold">
-                <p>태어난 월을 선택하세요</p>
+              <div id="monthBlank" class="wrap_fold">
+                <span>태어난 월을 선택하세요</span>
               </div>
-              <div id="dayBlank" class="fold">
-                <p>태어난 일자를 입력하세요.</p>
+              <div id="dayBlank" class="wrap_fold">
+                <span>태어난 일자를 입력하세요.</span>
               </div>
-              <div id="dayReg" class="fold">
-                <p>일자를 정확하게 입력해주세요. 예)1~31 ...</p>
+              <div id="dayReg" class="wrap_fold">
+                <span>일자를 정확하게 입력해주세요. 예)1~31 ...</span>
               </div>
             </div>
-            <div class="success">
+            <div class="wrap_success">
               <!-- 성공 메시지 -->
-              <div id="birthSuccess" class="fold">
-                <p>좋아요!</p>
+              <div id="birthSuccess" class="wrap_fold">
+                <span>좋아요!</span>
               </div>
             </div>
             <div>
@@ -116,19 +117,19 @@
                 <label for="uid">아이디</label>
               </h3>
               <input type="text" id="uid" name="uid"  class="focus">
-              <div class="error">
+              <div class="cont_error">
                 <!-- 에러메시지 -->
-                <div id="uidBlank" class="fold">
-                  <p><strong>아이디</strong>를 입력하세요.</p>
+                <div id="uidBlank" class="wrap_fold">
+                  <span><strong>아이디</strong>를 입력하세요.</span>
                 </div>
-                <div id="uidReg" class="fold">
-                  <p>아이디는 영문 소문자로 시작하며 5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.</p>
+                <div id="uidReg" class="wrap_fold">
+                  <span>아이디는 영문 소문자로 시작하며 5~20자의 영문 소문자, 숫자와 특수기호(_),(-)만 사용 가능합니다.</span>
                 </div>
               </div>
-              <div class="success">
+              <div class="wrap_success">
                 <!-- 성공 메시지 -->
-                <div id="uidSuccess" class="fold">
-                  <p>좋아요!</p>
+                <div id="uidSuccess" class="wrap_fold">
+                  <span>좋아요!</span>
                 </div>
               </div>
               <div>
@@ -140,18 +141,18 @@
                 <input type="checkbox" id="pwdOpen" onclick="pwd_open()">
                 <label for="pwdOpen">비밀번호 표시</label>
               </div>
-              <div class="error">
+              <div class="cont_error">
                 <!-- 에러메시지 -->
-                <div id="pwdBlank" class="fold">
-                  <p><strong>비밀번호</strong>를 입력하세요.</p>
+                <div id="pwdBlank" class="wrap_fold">
+                  <span><strong>비밀번호</strong>를 입력하세요.</span>
                 </div>
-                <div id="pwdReg" class="fold">
-                  <p>비밀번호는 영문 대소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자로 해야합니다.</p>
+                <div id="pwdReg" class="wrap_fold">
+                  <span>비밀번호는 영문 대소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자로 해야합니다.</span>
                 </div>
               </div>
-              <div class="success">
-                <div id="pwdSuccess" class="fold">
-                  <p>좋아요!</p>
+              <div class="wrap_success">
+                <div id="pwdSuccess" class="wrap_fold">
+                  <span>좋아요!</span>
                 </div>
               </div>
               <div>
@@ -162,18 +163,18 @@
                 <input id="pwdCheck" type="password" name="pwd" class="focus">
                 <p>*영문 소문자, 숫자, 특수문자(!,@,#)를 꼭 포함하여 9~20자</p>
               </div>
-              <div class="error">
+              <div class="cont_error">
                 <!-- 에러메시지 -->
-                <div id="pwdCheckBlank" class="fold">
-                  <p><strong>비밀번호 확인란</strong>을 입력하세요.</p>
+                <div id="pwdCheckBlank" class="wrap_fold">
+                  <span><strong>비밀번호 확인란</strong>을 입력하세요.</span>
                 </div>
-                <div id="pwdCheckFalse" class="fold">
-                  <p>비밀번호가 일치하지 않습니다. 다시 시도해주세요.</p>
+                <div id="pwdCheckFalse" class="wrap_fold">
+                  <span>비밀번호가 일치하지 않습니다. 다시 시도해주세요.</span>
                 </div>
               </div>
-              <div class="success">
-                <div id="pwdCheckSuccess" class="fold">
-                  <p>비밀번호가 일치합니다.</p>
+              <div class="wrap_success">
+                <div id="pwdCheckSuccess" class="wrap_fold">
+                  <span>비밀번호가 일치합니다.</span>
                 </div>
               </div>
               <div>
@@ -184,18 +185,18 @@
                 <input type="tel" id="tel" name="tel" placeholder="전화번호입력" maxlength="16" class="focus">
                 <span>ex)01012345678</span>
               </div>
-              <div class="error">
+              <div class="cont_error">
                 <!-- 에러메시지 -->
-                <div id="telBlank" class="fold">
-                  <p><strong>전화번호</strong>를 입력하세요.</p>
+                <div id="telBlank" class="wrap_fold">
+                  <span><strong>전화번호</strong>를 입력하세요.</span>
                 </div>
-                <div id="telReg" class="fold">
-                  <p>전화번호 형식이 잘못되었습니다. 다시 시도해주세요.</p>
+                <div id="telReg" class="wrap_fold">
+                  <span>전화번호 형식이 잘못되었습니다. 다시 시도해주세요.</span>
                 </div>
               </div>
-              <div class="success">
-                <div id="telSuccess" class="fold">
-                  <p>좋아요!</p>
+              <div class="wrap_success">
+                <div id="telSuccess" class="wrap_fold">
+                  <span>좋아요!</span>
                 </div>
               </div>
               <div>
@@ -206,21 +207,21 @@
                 <input type="text" id="email" name="email" placeholder="이메일입력" class="focus">
                 <span>ex)pandi@scatch.com</span>
               </div>
-              <div class="error">
+              <div class="cont_error">
                 <!-- 에러메시지 -->
-                <div id="emailBlank" class="fold">
-                  <p><strong>이메일</strong>을 입력하세요.</p>
+                <div id="emailBlank" class="wrap_fold">
+                  <span><strong>이메일</strong>을 입력하세요.</span>
                 </div>
-                <div id="emailReg" class="fold">
-                  <p>이메일 형식이 잘못되었습니다. 다시 시도해주세요.</p>
+                <div id="emailReg" class="wrap_fold">
+                  <span>이메일 형식이 잘못되었습니다. 다시 시도해주세요.</span>
                 </div>
               </div>
-              <div class="success">
-                <div id="emailSuccess" class="fold">
-                  <p>좋아요!</p>
+              <div class="wrap_success">
+                <div id="emailSuccess" class="wrap_fold">
+                  <span>좋아요!</span>
                 </div>
                 <div>
-                  <button class="signUpButton">회원가입</button>
+                  <button class="wrap_signUpButton">회원가입</button>
           </form>
         </fieldset>
 

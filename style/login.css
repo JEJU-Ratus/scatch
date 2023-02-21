@@ -1,33 +1,35 @@
-.wrap_login{
+.wrap_login{ /* 로그인 영역 전체 포지션(로그인창이 있는 window창 포함) */
   display: flex;
   justify-content: center;
   margin: 150px 20px 300px;
 }
-.cont_login{
+.cont_login{ /* 로그인창 영역 */
   text-align: center;
   border: 2px solid ;
-  
 }
-.cont_login h2{
+.cont_login h2{ /* 로그인에 대한 제목 */
   border-bottom: 2px solid;
 }
-.wrap_id{
+.wrap_id{ /* 아이디 input 위치 조정 */
   margin-top: 10px;
 }
-.cont_login > ul{
+.cont_login > ul{ /* 아이디/비밀번호찾기/ 회원가입 */
   display: flex;
   list-style-type: none;
 }
-.cont_login li::after{
+.cont_login li::after{ /* 아이디 비밀번호찾기, 회원가입 사이의 '|' 표시 */
   content: '｜';
   color: gray;
 }
-.cont_login li:last-child::after{
+.cont_login li:last-child::after{ /* 마지막 자식엔 '|' 표시 안되게 */
   content: '';
 }
-.error{
+.cont_error{ /* 에러메시지 색깔 */
   color: red;
 }
-.fold{
+.cont_error span{ /* 에러메시지 글자 크기 */
+  font-size: 12px;
+}
+.wrap_fold{ /* 접어둔 에러메시지 펼치기 */
   display: none;
 }

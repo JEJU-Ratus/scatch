@@ -103,23 +103,23 @@ function input_name() {
 
   if (!REG_NAME.test(uname.value)) { // 이름 규칙 확인
     if (!uname.value) {
-      nameBlank.classList.remove('fold'); // 이름을 입력하세요 - 펼치기
-      nameReg.classList.add('fold'); // 이름은 한글 2~30자 이내로 작성해주세요. - 가리기
-      nameSuccess.classList.add('fold');
+      nameBlank.classList.remove('wrap_fold'); // 이름을 입력하세요 - 펼치기
+      nameReg.classList.add('wrap_fold'); // 이름은 한글 2~30자 이내로 작성해주세요. - 가리기
+      nameSuccess.classList.add('wrap_fold');
       checkAll[0] = false;
     }
     else {
-      nameBlank.classList.add('fold');// 이름은 한글 2~30자 이내로 작성해주세요. - 펼치기
-      nameReg.classList.remove('fold'); //이름을 입력하세요 - 가리기
-      nameSuccess.classList.add('fold');// 이름으로 돌아가기
+      nameBlank.classList.add('wrap_fold');// 이름은 한글 2~30자 이내로 작성해주세요. - 펼치기
+      nameReg.classList.remove('wrap_fold'); //이름을 입력하세요 - 가리기
+      nameSuccess.classList.add('wrap_fold');// 이름으로 돌아가기
 
       checkAll[0] = false;
     }
   }
   else {
-    nameBlank.classList.add('fold');
-    nameReg.classList.add('fold');
-    nameSuccess.classList.remove('fold');
+    nameBlank.classList.add('wrap_fold');
+    nameReg.classList.add('wrap_fold');
+    nameSuccess.classList.remove('wrap_fold');
     checkAll[0] = true;
   }
 }
@@ -127,22 +127,22 @@ function input_year() {
   // 생년월일 유효성 테스트 및 결과 메시지 출력
   if (!REG_YEAR.test(year.value)) {
     if (!year.value) {
-      yearBlank.classList.remove('fold');
-      yearReg.classList.add('fold');
-      monthBlank.classList.add('fold');
-      dayBlank.classList.add('fold');
-      dayReg.classList.add('fold');
-      birthSuccess.classList.add('fold');
+      yearBlank.classList.remove('wrap_fold');
+      yearReg.classList.add('wrap_fold');
+      monthBlank.classList.add('wrap_fold');
+      dayBlank.classList.add('wrap_fold');
+      dayReg.classList.add('wrap_fold');
+      birthSuccess.classList.add('wrap_fold');
 
       checkAll[1] = false;
     }
     else {
-      yearBlank.classList.add('fold');
-      yearReg.classList.remove('fold');
-      monthBlank.classList.add('fold');
-      dayBlank.classList.add('fold');
-      dayReg.classList.add('fold');
-      birthSuccess.classList.add('fold');
+      yearBlank.classList.add('wrap_fold');
+      yearReg.classList.remove('wrap_fold');
+      monthBlank.classList.add('wrap_fold');
+      dayBlank.classList.add('wrap_fold');
+      dayReg.classList.add('wrap_fold');
+      birthSuccess.classList.add('wrap_fold');
 
       checkAll[1] = false;
     }
@@ -153,12 +153,12 @@ function input_year() {
 }
 function input_month() {
   if (!month.value) {
-    yearBlank.classList.add('fold');
-    yearReg.classList.add('fold');
-    monthBlank.classList.remove('fold');
-    dayBlank.classList.add('fold');
-    dayReg.classList.add('fold');
-    birthSuccess.classList.add('fold');
+    yearBlank.classList.add('wrap_fold');
+    yearReg.classList.add('wrap_fold');
+    monthBlank.classList.remove('wrap_fold');
+    dayBlank.classList.add('wrap_fold');
+    dayReg.classList.add('wrap_fold');
+    birthSuccess.classList.add('wrap_fold');
 
     checkAll[1] = false;
   }
@@ -169,33 +169,33 @@ function input_month() {
 function input_day() {
   if (!REG_DAY.test(dd.value)) {
     if (!day.value) {
-      yearBlank.classList.add('fold');
-      yearReg.classList.add('fold');
-      monthBlank.classList.add('fold');
-      dayBlank.classList.remove('fold');
-      dayReg.classList.add('fold');
-      birthSuccess.classList.add('fold');
+      yearBlank.classList.add('wrap_fold');
+      yearReg.classList.add('wrap_fold');
+      monthBlank.classList.add('wrap_fold');
+      dayBlank.classList.remove('wrap_fold');
+      dayReg.classList.add('wrap_fold');
+      birthSuccess.classList.add('wrap_fold');
 
       checkAll[1] = false;
     }
     else {
-      yearBlank.classList.add('fold');
-      yearReg.classList.add('fold');
-      monthBlank.classList.add('fold');
-      dayBlank.classList.add('fold');
-      dayReg.classList.remove('fold');
-      birthSuccess.classList.add('fold');
+      yearBlank.classList.add('wrap_fold');
+      yearReg.classList.add('wrap_fold');
+      monthBlank.classList.add('wrap_fold');
+      dayBlank.classList.add('wrap_fold');
+      dayReg.classList.remove('wrap_fold');
+      birthSuccess.classList.add('wrap_fold');
 
       checkAll[1] = false;
     }
   }
   else {
-    yearBlank.classList.add('fold');
-    yearReg.classList.add('fold');
-    monthBlank.classList.add('fold');
-    dayBlank.classList.add('fold');
-    dayReg.classList.add('fold');
-    birthSuccess.classList.remove('fold');
+    yearBlank.classList.add('wrap_fold');
+    yearReg.classList.add('wrap_fold');
+    monthBlank.classList.add('wrap_fold');
+    dayBlank.classList.add('wrap_fold');
+    dayReg.classList.add('wrap_fold');
+    birthSuccess.classList.remove('wrap_fold');
     checkAll[1] = true;
   }
 }
@@ -204,24 +204,24 @@ function input_uid() {
 
   if (!REG_UID.test(uid.value)) {
     if (!uid.value) {
-      uidBlank.classList.remove('fold');
-      uidReg.classList.add('fold');
-      uidSuccess.classList.add('fold');
+      uidBlank.classList.remove('wrap_fold');
+      uidReg.classList.add('wrap_fold');
+      uidSuccess.classList.add('wrap_fold');
 
       checkAll[2] = false;
     }
     else {
-      uidBlank.classList.add('fold');
-      uidReg.classList.remove('fold');
-      uidSuccess.classList.add('fold');
+      uidBlank.classList.add('wrap_fold');
+      uidReg.classList.remove('wrap_fold');
+      uidSuccess.classList.add('wrap_fold');
 
       checkAll[2] = false;
     }
   }
   else {
-    uidBlank.classList.add('fold');
-    uidReg.classList.add('fold');
-    uidSuccess.classList.remove('fold');
+    uidBlank.classList.add('wrap_fold');
+    uidReg.classList.add('wrap_fold');
+    uidSuccess.classList.remove('wrap_fold');
     checkAll[2] = true;
   }
 
@@ -230,24 +230,24 @@ function input_pwd() {
   // 비밀번호 유효성 검사 및 결과 출력
   if (!REG_PWD.test(pwd.value)) {
     if (!pwd.value) {
-      pwdBlank.classList.remove('fold');
-      pwdReg.classList.add('fold');
-      pwdSuccess.classList.add('fold');
+      pwdBlank.classList.remove('wrap_fold');
+      pwdReg.classList.add('wrap_fold');
+      pwdSuccess.classList.add('wrap_fold');
 
       checkAll[3] = false;
     }
     else {
-      pwdBlank.classList.add('fold');
-      pwdReg.classList.remove('fold');
-      pwdSuccess.classList.add('fold');
+      pwdBlank.classList.add('wrap_fold');
+      pwdReg.classList.remove('wrap_fold');
+      pwdSuccess.classList.add('wrap_fold');
 
       checkAll[3] = false;
     }
   }
   else {
-    pwdBlank.classList.add('fold');
-    pwdReg.classList.add('fold');
-    pwdSuccess.classList.remove('fold');
+    pwdBlank.classList.add('wrap_fold');
+    pwdReg.classList.add('wrap_fold');
+    pwdSuccess.classList.remove('wrap_fold');
     checkAll[3] = true;
   }
 }
@@ -255,31 +255,31 @@ function input_pwdCheck(){
   // 비밀번호 재확인 및 결과 메시지 출력
   if (pwd.value !== pwdCheck.value) {
     if (!pwdCheck.value) {
-      pwdCheckBlank.classList.remove('fold');
-      pwdCheckFalse.classList.add('fold');
-      pwdCheckSuccess.classList.add('fold');
+      pwdCheckBlank.classList.remove('wrap_fold');
+      pwdCheckFalse.classList.add('wrap_fold');
+      pwdCheckSuccess.classList.add('wrap_fold');
 
       checkAll[4] = false;
     }
     else {
-      pwdCheckBlank.classList.add('fold');
-      pwdCheckFalse.classList.remove('fold');
-      pwdCheckSuccess.classList.add('fold');
+      pwdCheckBlank.classList.add('wrap_fold');
+      pwdCheckFalse.classList.remove('wrap_fold');
+      pwdCheckSuccess.classList.add('wrap_fold');
 
       checkAll[4] = false;
     }
   }
   else {
     if(!pwdCheck.value){
-      pwdCheckBlank.classList.add('fold');
-      pwdCheckFalse.classList.add('fold');
-      pwdCheckSuccess.classList.add('fold');
+      pwdCheckBlank.classList.add('wrap_fold');
+      pwdCheckFalse.classList.add('wrap_fold');
+      pwdCheckSuccess.classList.add('wrap_fold');
       checkAll[4] = false;
     }
     else{
-      pwdCheckBlank.classList.add('fold');
-      pwdCheckFalse.classList.add('fold');
-      pwdCheckSuccess.classList.remove('fold');
+      pwdCheckBlank.classList.add('wrap_fold');
+      pwdCheckFalse.classList.add('wrap_fold');
+      pwdCheckSuccess.classList.remove('wrap_fold');
       checkAll[4] = true;
     }
 
@@ -289,48 +289,47 @@ function input_tel(){
   //전화번호 유효성 테스트 및 결과 메시지 출력
   if (!REG_TEL.test(tel.value)) {
     if (!tel.value) {
-      telBlank.classList.remove('fold');
-      telReg.classList.add('fold');
-      telSuccess.classList.add('fold');
+      telBlank.classList.remove('wrap_fold');
+      telReg.classList.add('wrap_fold');
+      telSuccess.classList.add('wrap_fold');
 
       checkAll[5] = false;
     }
     else {
-      telBlank.classList.add('fold');
-      telReg.classList.remove('fold');
-      telSuccess.classList.add('fold');
+      telBlank.classList.add('wrap_fold');
+      telReg.classList.remove('wrap_fold');
+      telSuccess.classList.add('wrap_fold');
 
       checkAll[5] = false;
     }
   }
   else {
-    telBlank.classList.add('fold');
-    telReg.classList.add('fold');
-    telSuccess.classList.remove('fold');
+    telBlank.classList.add('wrap_fold');
+    telReg.classList.add('wrap_fold');
+    telSuccess.classList.remove('wrap_fold');
     checkAll[5] = true;
   }
 }
 function input_email(){
   if (!REG_EMAIL.test(email.value)) {
     if (!email.value) {
-      emailBlank.classList.remove('fold');
-      emailReg.classList.add('fold');
-      emailSuccess.classList.add('fold');
+      emailBlank.classList.remove('wrap_fold');
+      emailReg.classList.add('wrap_fold');
+      emailSuccess.classList.add('wrap_fold');
 
       checkAll[6] = false;
     }
     else {
-      emailBlank.classList.add('fold');
-      emailReg.classList.remove('fold');
-      emailSuccess.classList.add('fold');
- 
+      emailBlank.classList.add('wrap_fold');
+      emailReg.classList.remove('wrap_fold');
+      emailSuccess.classList.add('wrap_fold');
       checkAll[6] = false;
     }
   }
   else {
-    emailBlank.classList.add('fold');
-    emailReg.classList.add('fold');
-    emailSuccess.classList.remove('fold');
+    emailBlank.classList.add('wrap_fold');
+    emailReg.classList.add('wrap_fold');
+    emailSuccess.classList.remove('wrap_fold');
     checkAll[6] = true;
   }
 }

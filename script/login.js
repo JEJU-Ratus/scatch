@@ -13,23 +13,23 @@ function loginForm_check() { // 유효성 검사. ID와
   let checkAll = true; // 유효성 검사 결과 최종 값이 들어갈 곳. 기본값 true
 
   if (!uid.value){
-    idBlank.classList.remove('fold');
-    pwBlank.classList.add('fold');
-    idReg.classList.add('fold');
+    idBlank.classList.remove('wrap_fold');
+    pwBlank.classList.add('wrap_fold');
+    idReg.classList.add('wrap_fold');
       uid.focus();
       checkAll = false;
   }
   else if (!pwd.value){
-    idBlank.classList.add('fold');
-    pwBlank.classList.remove('fold');
-    idReg.classList.add('fold');
+    idBlank.classList.add('wrap_fold');
+    pwBlank.classList.remove('wrap_fold');
+    idReg.classList.add('wrap_fold');
       pwd.focus();
       checkAll = false;
   }
   else if(!REG_UID.test(uid.value)){
-    idBlank.classList.add('fold');
-    pwBlank.classList.add('fold');
-    idReg.classList.remove('fold');
+    idBlank.classList.add('wrap_fold');
+    pwBlank.classList.add('wrap_fold');
+    idReg.classList.remove('wrap_fold');
       uid.focus();
       checkAll = false;
     }

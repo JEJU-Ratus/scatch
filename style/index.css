@@ -1,0 +1,21 @@
+.cont_main{
+  margin: 100px 20px 0px; /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
+}
+.cont_ad{/* 광고영역 */
+  height: 300px;
+  background-color: gray;
+}
+.cont_kategorie{ /* 대표 카테고리 3가지 */
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50px 0;
+}
+.kategorie{ /* 카테고리 임시 위치 잡기 */
+  width: 250px;
+  height: 500px;
+  border: solid 1px blue;
+}
+.cont_contents{ /* 메인영역 임시로 */
+  height: 500px;
+  background-color: yellow;
+}

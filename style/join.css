@@ -1,33 +1,32 @@
-p{
-  font-size: 12px;
-}
-.wrap_join{
+.wrap_join{ /* 회원가입 창 + 둘러싸고 있는 window 창 까지 포지션 */
   display: flex;
   justify-content: center;
 }
-.cont_join{
+.cont_join{ /* 회원가입 창 포지션 */
   margin: 150px 20px 300px;
   padding: 20px;
   border: 2px solid ;
 }
-legend{
+legend{ /* 회원가입 창 제목 */
   text-align: center;
 }
-.cont_birth{
-  display: flex;
+.cont_error{ /* 에러메시지 색깔 */
+  color: red;
 }
-.signUpButton{
+.cont_error span{ /* 에러 메시지 글자 크기 */
+  font-size: 12px;
+}
+.wrap_fold{/* 에러메시지, 성공메시지 접고 펼치기 */
+  display: none;
+}
+.wrap_success{/* 성공 메시지 색깔 */
+  color: green;
+}
+.wrap_success span{/* 성공 메시지 글자 크기 */
+  font-size:  12px;
+}
+.wrap_signUpButton{ /* 회원가입 버튼 */
   display: block;
   margin-top: 20px;
   margin-left: auto;
-}
-.error{
-  color: red;
-}
-.fold{
-  display: none;
-  font-size: 12px;
-}
-.success{
-  color: green;
 }

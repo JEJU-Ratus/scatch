@@ -60,3 +60,5 @@
 - 23년 2월 21일 회원가입 기능 최종 완성.(월에 따른 일자 구현은 추후)
 
 - netlify form submit 속성 수정
+
+- frame.css 로 frame에 해당하는 속성 분리
