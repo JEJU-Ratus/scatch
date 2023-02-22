@@ -1,5 +1,5 @@
 .wrap_intro{
-  margin: 160px 20px 0; /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
+  margin: 160px auto 0; /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
 }
 .cont_intro{
   text-align: center;

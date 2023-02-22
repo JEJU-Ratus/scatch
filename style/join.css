@@ -3,7 +3,7 @@
   justify-content: center;
 }
 .cont_join{ /* 회원가입 창 포지션 */
-  margin: 150px 20px 300px;
+  margin: 150px auto 300px;
   padding: 20px;
   border: 2px solid ;
 }
