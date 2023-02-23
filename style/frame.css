@@ -1,6 +1,5 @@
 #container{   /* body 전체 영역을 포지션. */
-  min-height: 100vh; /* 화면 크기가 커져도 footer가 가장 아래에 있도록 함 */
-  position: relative; /* 기준이 되는 부모 포지션. */
+ position: relative; /* 기준이 되는 부모 포지션. */
 }
 header {/* 상단영역 배경 */
   padding: 18px 0;
