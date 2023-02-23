@@ -4,7 +4,6 @@
 }
 
 .cont_intro {
-  padding-top: 60px;
   text-align: center;
   font-weight: bold;
 }
@@ -12,6 +11,9 @@
   margin: 0 0 45px 13%;
   text-align: left;
   font-size: 36px;
+}
+.tit_logo{
+  padding-top: 30px;
 }
 .img_introLogo {
   display: inline-block;
