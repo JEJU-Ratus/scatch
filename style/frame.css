@@ -11,12 +11,10 @@ header {/* 상단영역 배경 */
   right: 0;
 }
 main{
-  padding-bottom: 220px; /* footer 고정 */
+  min-height: 100vh;
 }
 footer{/* 하단영역 배경 */
   background-color: #92D050;
-  position:absolute; /* relative 기준으로 위치 조정 */
-  bottom: 0;
   width: 100%;
   padding: 14.3px 0;
 }

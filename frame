@@ -79,7 +79,7 @@
       <div class="cont_frame">
         <h1>
           <!-- 로고 -->
-          <a href="index.html">
+          <a href="index-afterLogin.html">
             <img class="img_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
 
           </a>

@@ -1,21 +1,31 @@
-.wrap_intro{
-  margin: 160px auto 0; /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
+.wrap_intro {
+  margin-top: 100px;
+  /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
 }
-.cont_intro{
+
+.cont_intro {
+  padding-top: 60px;
   text-align: center;
   font-weight: bold;
 }
-.img_introLogo{
+.cont_intro>h2{
+  margin: 60px 0 45px 13%;
+  text-align: left;
+  font-size: 36px;
+}
+.img_introLogo {
   display: inline-block;
   margin-bottom: 63px;
   width: 191.76px;
   height: 82.04px;
 
 }
-.cont_siteColor{
-  margin: 52.32px 0 39.41px;
+
+.cont_siteColor {
+  margin-bottom: 41px;
 }
-.wrap_circle{
+
+.wrap_circle {
   display: inline-block;
   width: 95.54px;
   height: 95.54px;
@@ -23,36 +33,45 @@
   position: relative;
   z-index: -1;
 }
-.wrap_circle span{
+
+.wrap_circle span {
   position: absolute;
   top: 32.77px;
   left: 11.645px;
   font-size: 20px;
 }
-.blue{
+
+.blue {
   background-color: #3E8CEC;
 }
-.purple{
+
+.purple {
   background-color: #C95BEC;
 }
-.cont_introMastcot{
-  text-align: left;
+
+.cont_introMastcot {
   display: flex;
   justify-content: center;
-  margin: 70px 0 100px;
+  flex-wrap: wrap;
+  margin-bottom:100px;
 }
-.cont_introMastcot>img{
+
+.cont_introMastcot>img {
   width: 350px;
 }
-.cont_mascotText{
+
+.cont_mascotText {
   flex-basis: 350px;
   margin-left: 20px;
+  text-align: left;
 }
-.cont_mascotText>h2{
+
+.cont_mascotText>h3 {
   margin-top: 30px;
   font-size: 28px;
 }
-.cont_mascotText>p{
+
+.cont_mascotText>p {
   margin-bottom: 15px;
   color: gray;
   font-size: 13px;
