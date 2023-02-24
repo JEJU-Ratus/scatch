@@ -1,9 +1,10 @@
 .wrap_finish{
   display: flex;
   justify-content: center;
+  margin-top: 100px;
 }
 .cont_finish{
-  margin: 150px 0 300px;
+  margin:50px 0 300px;
   border: 2px solid ;
 }
 .cont_finish h2{

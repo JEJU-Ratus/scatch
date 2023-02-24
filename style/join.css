@@ -1,9 +1,10 @@
 .wrap_join{ /* 회원가입 창 + 둘러싸고 있는 window 창 까지 포지션 */
   display: flex;
   justify-content: center;
-  margin-top: 150px;
+  margin-top: 100px;
 }
 .cont_join{ /* 회원가입 창 포지션 */
+  margin-top: 50px;
   padding: 20px;
   border: 2px solid ;
 }

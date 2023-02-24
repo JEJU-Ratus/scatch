@@ -1,52 +1,112 @@
-#container{   /* body 전체 영역을 포지션. */
- position: relative; /* 기준이 되는 부모 포지션. */
-}
-header {/* 상단영역 배경 */
+header {
+  /* 상단영역 배경 */
   padding: 18px 0;
   background-color: #92D050;
-  position: fixed; /* 상단 메뉴 움직이게 */
+  position: fixed;  /* 상단 메뉴 움직이게 */
   top: 0;
   left: 0;
   right: 0;
+  z-index: 1;
 }
-main{
+
+main {/* 메인영역 길이 */
   min-height: 100vh;
 }
-footer{/* 하단영역 배경 */
+
+footer {
+  /* 하단영역 배경 */
   background-color: #92D050;
   width: 100%;
   padding: 14.3px 0;
 }
-.siteWidth{
+
+.siteWidth {
   margin: 0 auto;
-  width: 80%;
+  width: 1280px;
 }
-.cont_frame{/* 상단 헤더 영역 및 하단 푸터 영역 구조  */
+
+.cont_frame {
+  /* 상단 헤더 영역 및 하단 푸터 영역 구조  */
   display: flex;
   align-items: center;
   justify-content: space-between;
 }
-h1 { /* 로고 옵션 */
+
+h1 {
+  /* 로고 옵션 */
   display: inline-block;
 }
-.img_logo{ /* 상단영역 로고 */
-  width: 150px; 
+
+.img_logo {
+  /* 상단영역 로고 */
+  width: 150px;
 }
-header ul{/* 상단영역 메뉴 배치 */
+
+.cont_menu {
+  /* 상단영역 메뉴 배치 */
   display: flex;
+  position: relative;
 }
-header ul>li{ /* 상단영역 메뉴 배치 */
+
+.cont_menu>li {
+  /* 상단영역 메뉴 배치 */
   list-style-type: none;
   margin-right: 20px;
-}.wrap_info p{/* footer 정보 영역 속성 */
+}
+.cont_menu>li:last-child{
+  margin-right: 0;
+}
+
+.cont_menu>li>a {
+  padding: 35px 0;
+  font-size: 23px;
+  font-weight: bold;
+  color: beige;
+}
+.cont_menu>li>a:hover {
+  background-color: #8dc552;
+}
+
+.cont_menuKategorie {
+  display: none;
+  list-style-type: none;
+  margin-top: 35.6px;
+  width: 160px;
+  background-color: #f9f9f9;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  position: absolute;
+}
+
+.cont_menuKategorie li {
+  padding: 12px 16px;
+}
+
+.cont_menuKategorie a {
+  text-decoration: none;
+}
+
+.cont_menuKategorie li:hover {
+  background-color: #f1f1f1
+}
+
+.wrap_menuKategorie:hover .cont_menuKategorie {
+  display: block;
+}
+
+.wrap_info p {
+  /* footer 정보 영역 속성 */
   color: gray;
   font-size: 12px;
 }
-footer img{ /* 하단영역 마스코트 위치설정 */
+
+footer img {
+  /* 하단영역 마스코트 위치설정 */
   margin-left: auto;
   width: 250px;
 }
-.copyright{ /* 하단영역 카피라이트 문구 */
+
+.copyright {
+  /* 하단영역 카피라이트 문구 */
   text-align: center;
   font-size: 12px;
   color: gray;
