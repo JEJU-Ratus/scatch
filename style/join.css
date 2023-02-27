@@ -26,7 +26,7 @@ legend{ /* 회원가입 창 제목 */
 .wrap_success span{/* 성공 메시지 글자 크기 */
   font-size:  12px;
 }
-.wrap_signUpButton{ /* 회원가입 버튼 */
+.btn_signUp{ /* 회원가입 버튼 */
   display: block;
   margin-top: 20px;
   margin-left: auto;

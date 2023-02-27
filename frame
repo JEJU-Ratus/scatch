@@ -21,7 +21,6 @@
           <!-- 로고 -->
           <a href="index.html">
             <img class="img_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
-
           </a>
         </h1>
         <nav>
@@ -41,11 +40,9 @@
         </nav>
       </div>
     </header>
-
     <main>
       <div class="cont_main siteWidth">
         <!-- 메인영역 구조 -->
-
     </main>
     <footer>
       <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
@@ -60,8 +57,6 @@
       <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
     </footer>
   </div>
-
-
 </body>
 
 </html>
@@ -109,11 +104,9 @@
         </nav>
       </div>
     </header>
-
     <main>
       <div class="cont_main">
         <!-- 메인영역 구조 -->
-
       </div>
     </main>
     <footer>
@@ -129,8 +122,6 @@
       <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
     </footer>
   </div>
-
-
 </body>
 
 </html>

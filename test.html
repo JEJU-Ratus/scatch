@@ -10,50 +10,49 @@
 </head>
 
 <body>
+  <div class="wrap_login">
+    <!-- 로그인 영역 구조 -->
+    <section class="cont_login">
+      <!-- 로그인 영역 -->
+      <h2>로그인</h2>
+      <form action="index-afterLogin.html" method="post" onsubmit="return loginForm_check()">
+        <div class="wrap_id">
+          <!-- 아이디 입력 -->
+          <label for="uid">아이디</label>
+          <input id="uid" type="text" name="uid" placeholder="아이디를 입력하세요.">
+        </div>
+        <div class="wrap_pw">
+          <label for="pwd">비밀번호</label>
+          <input id="pwd" type="password" name="pwd" placeholder="비밀번호를 입력하세요.">
+        </div>
+        <div>
+          <input type="checkbox" id="pwdOpen" onclick="loginPwd_open()">
+          <label for="pwdOpen">비밀번호 표시</label>
+        </div>
+        <div>
+          <!-- 에러메시지 출력 -->
+          <div id="error_idBlank" class="error_msg">
+            <p><strong>아이디</strong>를 입력하세요.</p>
+          </div>
+          <div id="error_pwBlank" class="error_msg">
+            <p><strong>비밀번호</strong>를 입력하세요.</p>
+          </div>
+          <div id="error_idReg" class="error_msg">
+            <p><strong>아이디</strong>또는<strong>비밀번호</strong>가 잘못되었습니다.</p>
+          </div>
+        </div>
+        <button>로그인</button>
+      </form>
+      <ul>
+        <li><a href="#">아이디 찾기</a></li>
+        <li><a href="#">비밀번호 찾기</a></li>
+        <li><a href="join.html">회원가입</a></li>
+      </ul>
+    </section>
+  </div>
+  </main>
 
-      <div class="wrap_login">
-        <!-- 로그인 영역 구조 -->
-        <section class="cont_login">
-          <!-- 로그인 영역 -->
-          <h2>로그인</h2>
-          <form action="index-afterLogin.html" method="post" onsubmit="return loginForm_check()">
-            <div class="wrap_id">
-              <!-- 아이디 입력 -->
-              <label for="uid">아이디</label>
-              <input id="uid" type="text" name="uid" placeholder="아이디를 입력하세요.">
-            </div>
-            <div class="wrap_pw">
-              <label for="pwd">비밀번호</label>
-              <input id="pwd" type="password" name="pwd" placeholder="비밀번호를 입력하세요.">
-            </div>
-            <div>
-              <input type="checkbox" id="pwdOpen" onclick="loginPwd_open()">
-              <label for="pwdOpen">비밀번호 표시</label>
-            </div>
-            <div>
-              <!-- 에러메시지 출력 -->
-              <div id="error_idBlank" class="error_msg">
-                <p><strong>아이디</strong>를 입력하세요.</p>
-              </div>
-              <div id="error_pwBlank" class="error_msg">
-                <p><strong>비밀번호</strong>를 입력하세요.</p>
-              </div>
-              <div id="error_idReg" class="error_msg">
-                <p><strong>아이디</strong>또는<strong>비밀번호</strong>가 잘못되었습니다.</p>
-              </div>
-            </div>
-            <button>로그인</button>
-          </form>
-          <ul>
-            <li><a href="#">아이디 찾기</a></li>
-            <li><a href="#">비밀번호 찾기</a></li>
-            <li><a href="join.html">회원가입</a></li>
-          </ul>
-        </section>
-      </div>
-    </main>
 
-   
   <script src="script/test.js"></script>
 </body>
 

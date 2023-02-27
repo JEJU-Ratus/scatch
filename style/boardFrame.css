@@ -1,0 +1,46 @@
+.cont_board {
+  width: 1000px;
+  margin: 100px auto;
+}
+
+.tit_board {
+  margin-bottom: 30px;
+}
+
+h1 {
+  font-size: 30px;
+}
+
+.tit_board p {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+.wrap_button {
+  text-align: right;
+  font-size: 0;
+}
+
+.wrap_button a {
+  display: inline-block;
+  text-align: center;
+  margin-left: 10px;
+  padding: 10px;
+  width: 80px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
+
+
+.wrap_button a:hover {
+  text-decoration: none;
+}
+
+.wrap_button a:first-child {
+  margin-left: 0;
+}
+
+.btn_type1 {
+  background-color: #000;
+  color: #fff;
+}
