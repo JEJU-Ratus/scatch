@@ -55,6 +55,9 @@
   padding-top: 7px;
   font-size: 0.75rem;
 }
+.space{
+  letter-spacing: -4px;
+}
 .wrap_btnPage > .wrap_check{
   background-color: #000;
   border-color: #000;

@@ -17,19 +17,25 @@
 
 ### 페이지 소개
 
-- index.html - 메인 페이지 / index-afterLogin.html - 메인 페이지(로그인 되었을 때)
+- index.html - 메인 페이지 / index-afterLogin.html - (로그인 되었을 때)
 
 - login.html - 로그인 페이지
 
 - join.html - 회원가입 페이지 / join-finish - 회원가입 완료 페이지
 
-- intro.html - 사이트 소개 페이지 / intro-afterLogin.html - 사이트 소개 페이지(로그인 되었을 때)
+- intro.html - 사이트 소개 페이지 / intro-afterLogin.html - (로그인 되었을 때)
 
-- market.html - 판매 캐릭터 페이지 / market-afterLogin.html - 판매 캐릭터 페이지(로그인 되었을 때)
+- market.html - 판매 캐릭터 페이지 / market-afterLogin.html - (로그인 되었을 때)
 
-- kategori1.html - 판매캐릭터-카테고리1 페이지
+- kategorie1.html - 판매캐릭터-카테고리1 페이지 / kategorie1-afterLogin.html - (로그인 되었을 때)
 
-- notice.html - 공지사항 페이지
+- notice.html - 공지사항 페이지 / notice-afterLogin.html - (로그인 되었을 때)
+
+- noticePost.html - 공지사항 게시물 페이지. / noticePost-afterLogin.html - (로그인 되었을 때)
+
+- noticeWrite.html - 공지사항 게시글 작성 페이지. / noticeWrite-afterLogin.html - (로그인 되었을 때)
+
+- noticeWriteEdit.html - 공지사항 게시글 수정 페이지. / noticeWriteEdit-afterLogin.html - (로그인 되었을 때)
 
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
@@ -91,3 +97,7 @@
 - 23년 2월 28일 사이트 공지사항 구현 완료
 
 - 로그인 후 창 폴더 구분.
+
+- 로그인 후 게시글 폼 오류 수정.
+
+- kategorie1 완성. - 카테고리1 페이지 완성.
