@@ -8,6 +8,7 @@
   font-weight: bold;
 }
 .cont_intro>h2{
+  padding-top: 60px;
   margin-bottom: 45px;
   margin-left: 13%;
   text-align: left;
@@ -73,7 +74,7 @@
 }
 
 .cont_mascotText>h3 {
-  margin-top: 30px;
+  margin-bottom: 30px;
   font-size: 28px;
 }
 
