@@ -37,6 +37,8 @@
 
 - noticeWriteEdit-afterLogin.html - (로그인 되었을 때)
 
+- kategorie2.html - 판매캐릭터-카테고리2 페이지 / kategorie2-afterLogin.html - (로그인 되었을 때)
+
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
 
@@ -101,3 +103,7 @@
 - 로그인 후 게시글 폼 오류 수정.
 
 - kategorie1 완성. - 카테고리1 페이지 완성.
+
+- 공지사항 삭제 버튼 구현 및 비 로그인 시 수정/작성 버튼 및 페이지 삭제
+
+- kategorie2 완성. - 카테고리2 페이지 완성.

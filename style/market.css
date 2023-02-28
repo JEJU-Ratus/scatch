@@ -14,6 +14,10 @@ h2{
   padding-bottom: 15px;
   border-bottom: 2px solid #000;
 }
+.cont_allKategori h3{
+  display: inline-block;
+  font-size: 22px;
+}
 .tit_more {
   float: right;
   clear: both;
@@ -32,10 +36,7 @@ h2{
   top: 0.5px;
 }
 
-.cont_allKategori h3{
-  display: inline-block;
-  font-size: 22px;
-}
+
 .cont_allKategori a{
   display: inline-block;
 }
