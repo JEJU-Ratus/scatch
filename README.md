@@ -33,9 +33,9 @@
 
 - noticePost.html - 공지사항 게시물 페이지. / noticePost-afterLogin.html - (로그인 되었을 때)
 
-- noticeWrite.html - 공지사항 게시글 작성 페이지. / noticeWrite-afterLogin.html - (로그인 되었을 때)
+- noticeWrite-afterLogin.html - (로그인 되었을 때)
 
-- noticeWriteEdit.html - 공지사항 게시글 수정 페이지. / noticeWriteEdit-afterLogin.html - (로그인 되었을 때)
+- noticeWriteEdit-afterLogin.html - (로그인 되었을 때)
 
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의

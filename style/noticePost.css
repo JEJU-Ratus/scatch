@@ -38,3 +38,7 @@
 .wrap_content{
   padding: 15px;
 }
+.wrap_delete{
+  float: left;
+  clear: both;
+}
