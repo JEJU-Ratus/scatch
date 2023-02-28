@@ -46,3 +46,6 @@
   width: 1280px;
   resize: none;
 }
+.btn_submit{
+  display: none;
+}

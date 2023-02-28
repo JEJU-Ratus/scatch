@@ -10,9 +10,6 @@
   <link rel="stylesheet" href="style/frame.css">
   <link rel="stylesheet" href="style/boardFrame.css">
   <link rel="stylesheet" href="style/noticeWrite.css">
-  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
-  <script type="text/javascript" src="smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
-  <script src="script/noticeWrite.js"></script>
 </head>
 
 <body>
@@ -48,6 +45,7 @@
         <h2>글 작성</h2>
       </div>
       <div class="cont_write">
+        <form id="notice" action="noticePost.html" method="post">
         <div class="wrap_title">
           <label for="title">제목</label>
           <input type="text" id="title" placeholder="제목 입력">
@@ -58,13 +56,15 @@
             <dd>관리자</dd>
           </dl>
         </div>
-        <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10"
+          <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10"
           placeholder="내용을 입력해주세요"></textarea>
       </div>
       <div class="wrap_button">
-        <a href="noticePost.html" class="btn_type1">등록</a>
+        <button class="btn_submit" id="btn_submit">등록</button>
+        <a href="#" class="btn_type1" id="submit">등록</a>
         <a href="notice.html">취소</a>
       </div>
+    </form>
     </section>
   </main>
   <footer>
@@ -79,6 +79,9 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+  <script src="script/noticeWrite.js"></script>
 </body>
 
 </html>
