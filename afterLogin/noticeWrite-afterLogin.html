@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스캐치 : 사이트 소개</title>
+  <title>스캐치 : 공지사항 - 작성</title>
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/frame.css">
-  <link rel="stylesheet" href="../style/index.css">
+  <link rel="stylesheet" href="../style/boardFrame.css">
+  <link rel="stylesheet" href="../style/noticeWrite.css">
 </head>
 
 <body>
@@ -39,17 +40,32 @@
     </div>
   </header>
   <main>
-    <div class="cont_main siteWidth">
-      <!-- 메인영역 구조 -->
-      <div class="cont_ad">광고배너 영역</div>
-      <!-- 광고 배너 영역 -->
-      <section class="cont_kategorie">
-        <!-- 캐릭터 디자인 카테고리 -->
-        <div class="kategorie"></div>
-        <div class="kategorie"></div>
-        <div class="kategorie"></div>
-      </section>
-    </div>
+    <section class="cont_notice siteWidth">
+      <div class="tit_notice">
+        <h2>글 작성</h2>
+      </div>
+      <form id="notice" action="noticePost-afterLogin.html" method="post" name="notice_form" data-netlify="true" >
+      <div class="cont_write">
+        <div class="wrap_title">
+          <label for="title">제목</label>
+          <input type="text" id="title" placeholder="제목 입력">
+        </div>
+        <div class="wrap_writer">
+          <dl>
+            <dt>작성자</dt>
+            <dd>관리자</dd>
+          </dl>
+        </div>
+          <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10"
+          placeholder="내용을 입력해주세요"></textarea>
+      </div>
+      <div class="wrap_button">
+        <button class="btn_submit" id="btn_submit"></button>
+        <a href="#" class="btn_type1" id="submit">등록</a>
+        <a href="notice-afterLogin.html">취소</a>
+      </div>
+    </form>
+    </section>
   </main>
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
@@ -63,6 +79,9 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="../smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+  <script src="../script/noticeWrite.js"></script>
 </body>
 
 </html>
