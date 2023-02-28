@@ -14,6 +14,23 @@
 
 - 캐릭터, 마스코트 디자인 1인
 
+
+### 페이지 소개
+
+- index.html - 메인 페이지 / index-afterLogin.html - 메인 페이지(로그인 되었을 때)
+
+- login.html - 로그인 페이지
+
+- join.html - 회원가입 페이지 / join-finish - 회원가입 완료 페이지
+
+- intro.html - 사이트 소개 페이지 / intro-afterLogin.html - 사이트 소개 페이지(로그인 되었을 때)
+
+- market.html - 판매 캐릭터 페이지 / market-afterLogin.html - 판매 캐릭터 페이지(로그인 되었을 때)
+
+- kategori1.html - 판매캐릭터-카테고리1 페이지
+
+- notice.html - 공지사항 페이지
+
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
 

@@ -5,10 +5,14 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스캐치 : 로그인</title>
+  <title>게시판만들기 연습</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/frame.css">
-  <link rel="stylesheet" href="style/login.css">
+  <link rel="stylesheet" href="style/boardFrame.css">
+  <link rel="stylesheet" href="style/noticeWrite.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  <script type="text/javascript" src="smarteditor/js/HuskyEZCreator.js" charset="utf-8"></script>
+  <script src="script/noticeWrite.js"></script>
 </head>
 
 <body>
@@ -39,47 +43,29 @@
     </div>
   </header>
   <main>
-    <div class="wrap_login siteWidth">
-      <!-- 로그인 영역 구조 -->
-      <section class="cont_login">
-        <!-- 로그인 영역 -->
-        <h2>로그인</h2>
-        <form name="login_form" action="index-afterLogin.html" method="post" onsubmit="return loginForm_check()"
-          data-netlify="true">
-          <div class="wrap_id">
-            <!-- 아이디 입력 -->
-            <label for="uid">아이디</label>
-            <input id="uid" type="text" name="uid" placeholder="아이디를 입력하세요.">
-          </div>
-          <div>
-            <label for="pwd">비밀번호</label>
-            <input id="pwd" type="password" name="pwd" placeholder="비밀번호를 입력하세요.">
-          </div>
-          <div>
-            <input type="checkbox" id="pwdOpen" onclick="loginPwd_open()">
-            <label for="pwdOpen">비밀번호 표시</label>
-          </div>
-          <div class="cont_error">
-            <!-- 에러메시지 출력 -->
-            <div id="idBlank" class="wrap_fold">
-              <span><strong>아이디</strong>를 입력하세요.</span>
-            </div>
-            <div id="pwBlank" class="wrap_fold">
-              <span><strong>비밀번호</strong>를 입력하세요.</span>
-            </div>
-            <div id="idpwReg" class="wrap_fold">
-              <span><strong>아이디</strong>또는<strong>비밀번호</strong>가 잘못되었습니다.</span>
-            </div>
-          </div>
-          <button>로그인</button>
-        </form>
-        <ul>
-          <li><a href="#">아이디 찾기</a></li>
-          <li><a href="#">비밀번호 찾기</a></li>
-          <li><a href="join.html">회원가입</a></li>
-        </ul>
-      </section>
-    </div>
+    <section class="cont_notice siteWidth">
+      <div class="tit_notice">
+        <h2>글 작성</h2>
+      </div>
+      <div class="cont_write">
+        <div class="wrap_title">
+          <label for="title">제목</label>
+          <input type="text" id="title" placeholder="제목 입력">
+        </div>
+        <div class="wrap_writer">
+          <dl>
+            <dt>작성자</dt>
+            <dd>관리자</dd>
+          </dl>
+        </div>
+        <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10"
+          placeholder="내용을 입력해주세요"></textarea>
+      </div>
+      <div class="wrap_button">
+        <a href="noticePost.html" class="btn_type1">등록</a>
+        <a href="notice.html">취소</a>
+      </div>
+    </section>
   </main>
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
@@ -93,8 +79,6 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
-  <script src="script/login.js"></script>
 </body>
-
 
 </html>

@@ -7,23 +7,33 @@
   padding: 15px;
   border-bottom: 1px dashed #ddd;
 }
+.wrap_title label{
+  margin-right: 30px;
+  font-weight: bold;
+}
+.wrap_title input{
+  width: 1182px;
+}
 
 .wrap_writer {
   padding: 15px;
   border-bottom: 1px solid #999;
+  margin-bottom: 15px;
   position: relative;
 }
 
 .cont_write dl {
-  display: flex
+  display: flex;
 }
 
 .cont_write dt {
   margin-right: 10px;
+  font-weight: bold;
 }
 
 .cont_write dd {
   margin-left: 10px;
+
 }
 
 .cont_write dt::after {
@@ -33,13 +43,6 @@
   left: 71px;
 }
 .wrap_editor{
-  width: 1000px;
+  width: 1280px;
   resize: none;
 }
-/* .wrap_writePost{
-  margin: 15px 0;
-  resize: none;
-  width: 1000px;
-  height: 400px;
-  border : 1px solid gray;
-} */

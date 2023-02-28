@@ -1,22 +1,18 @@
-.cont_board {
-  width: 1000px;
-  margin: 100px auto;
+.cont_notice{
+  margin-top: 100px;
+}
+.tit_notice {
+  padding-top: 60px;
+  margin-bottom: 20px;
 }
 
-.tit_board {
-  margin-bottom: 30px;
+h2{
+  font-size: 28px;
 }
 
-h1 {
-  font-size: 30px;
-}
-
-.tit_board p {
-  margin-top: 5px;
-  font-size: 0.9rem;
-}
 .wrap_button {
   text-align: right;
+  margin-bottom: 30px;
   font-size: 0;
 }
 

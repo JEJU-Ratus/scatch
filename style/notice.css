@@ -1,16 +1,15 @@
-.cont_board_li {
+.cont_notice_li {
   text-align: center;
   border-top: 2px solid #000;
-
 }
 
-.cont_board_li>div {
+.cont_notice_li>div {
   padding: 15px 0;
   border-bottom: 1px solid #ddd;
   font-size: 0;
 }
 
-.cont_board_li>div.cont_attribute {
+.cont_notice_li>div.cont_attribute {
   border-bottom: 1px solid #999;
   font-weight: bold;
 }
@@ -19,11 +18,11 @@
   text-align: center;
 }
 
-.cont_board_li>div:last-child {
+.cont_notice_li>div:last-child {
   border-bottom: 1px solid #000;
 }
 
-.cont_board_li>div>div {
+.cont_notice_li>div>div {
   display: inline-block;
 }
 
