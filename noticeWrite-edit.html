@@ -44,29 +44,31 @@
       <div class="tit_notice">
         <h2>글 작성</h2>
       </div>
+      <form id="notice" action="noticePost.html" method="post" name="noticeEdit_form" data-netlify="true">
       <div class="cont_write">
-        <div class="wrap_title">
-          <label for="title">제목</label>
-          <input type="text" id="title" placeholder="제목 입력">
-        </div>
-        <div class="wrap_writer">
-          <dl>
-            <dt>작성자</dt>
-            <dd>관리자</dd>
-          </dl>
-        </div>
-        <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10"
-          placeholder="내용을 입력해주세요">
-내용이 들어가는 자리.
-내용이 들어가는 자리.
-내용이 들어가는 자리.
-내용이 들어가는 자리.
+          <div class="wrap_title">
+            <label for="title">제목</label>
+            <input type="text" id="title" placeholder="제목 입력">
+          </div>
+          <div class="wrap_writer">
+            <dl>
+              <dt>작성자</dt>
+              <dd>관리자</dd>
+            </dl>
+          </div>
+          <textarea class="wrap_editor" name="editorTxt" id="editorTxt" rows="20" cols="10" placeholder="내용을 입력해주세요">
+내용이 들어가는 자리.<br>
+내용이 들어가는 자리.<br>
+내용이 들어가는 자리.<br>
+내용이 들어가는 자리.<br>
 내용이 들어가는 자리.</textarea>
       </div>
       <div class="wrap_button">
-        <a href="noticePost.html" class="btn_type1">등록</a>
+        <button class="btn_submit" id="btn_submit">등록</button>
+        <a href="#" class="btn_type1" id="submit">등록</a>
         <a href="noticePost.html">취소</a>
       </div>
+      </form>
     </section>
   </main>
   <footer>
