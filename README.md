@@ -33,9 +33,9 @@
 
 - noticePost.html - 공지사항 게시물 페이지. / noticePost-afterLogin.html - (로그인 되었을 때)
 
-- noticeWrite-afterLogin.html - (로그인 되었을 때)
+- noticeWrite-afterLogin.html - 공지사항 작성(로그인 되었을 때)
 
-- noticeWriteEdit-afterLogin.html - (로그인 되었을 때)
+- noticeWriteEdit-afterLogin.html - 공지사항 수정(로그인 되었을 때)
 
 - kategorie2.html - 판매캐릭터-카테고리2 페이지 / kategorie2-afterLogin.html - (로그인 되었을 때)
 
@@ -107,3 +107,5 @@
 - 공지사항 삭제 버튼 구현 및 비 로그인 시 수정/작성 버튼 및 페이지 삭제
 
 - kategorie2 완성. - 카테고리2 페이지 완성.
+
+- .gitignore 추가. test파일들 업로드 제외(페이지 기능 구현 실험용 페이지)
