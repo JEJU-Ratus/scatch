@@ -60,16 +60,20 @@ h1 {
 }
 
 .cont_menu>li>a {
+  /* 상단영역 메뉴 디자인 */
   padding: 22px 0;
   font-size: 23px;
   font-weight: bold;
   color: #9f2ec1;
 }
 .cont_menu>li>a:hover {
+  /* 상단영역 메뉴 마우스 올렸을 때 */
   background-color: #f7edfb;
+  text-decoration: none;
 }
 
 .cont_menuKategorie {
+  /* 상단영역 판매 캐릭터 상세메뉴 디자인 */
   display: none;
   list-style-type: none;
   margin-top: 23px;
@@ -80,15 +84,14 @@ h1 {
 }
 
 .cont_menuKategorie li {
+  /* 상단영역 판매 캐릭터 상세메뉴 디자인 */
   padding: 12px 16px;
 }
 
-.cont_menuKategorie a {
-  text-decoration: none;
-}
 
 .cont_menuKategorie li:hover {
-  background-color: #f2dcfa
+  /* 상단영역 판매 캐릭터 상세메뉴 마우스 올렸을 때 */
+  background-color: #f2dcfa;
 }
 
 .wrap_menuKategorie:hover .cont_menuKategorie {
