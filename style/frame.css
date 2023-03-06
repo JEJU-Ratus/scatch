@@ -1,7 +1,8 @@
 header {
   /* 상단영역 배경 */
-  padding: 18px 0;
-  background-color: #92D050;
+  padding: 5px 0;
+  background-color: white;
+  border-bottom: solid 2px #3E8CEC;
   position: fixed;  /* 상단 메뉴 움직이게 */
   top: 0;
   left: 0;
@@ -11,11 +12,12 @@ header {
 
 main {/* 메인영역 길이 */
   min-height: 100vh;
+  background-color: #dbebff;
 }
 
 footer {
   /* 하단영역 배경 */
-  background-color: #92D050;
+  background-color: rgb(210, 199, 199);
   width: 100%;
   padding: 14.3px 0;
 }
@@ -58,21 +60,21 @@ h1 {
 }
 
 .cont_menu>li>a {
-  padding: 35px 0;
+  padding: 22px 0;
   font-size: 23px;
   font-weight: bold;
-  color: beige;
+  color: #C95BEC;
 }
 .cont_menu>li>a:hover {
-  background-color: #8dc552;
+  background-color: #f7edfb;
 }
 
 .cont_menuKategorie {
   display: none;
   list-style-type: none;
-  margin-top: 34.6px;
+  margin-top: 23px;
   width: 160px;
-  background-color: #f9f9f9;
+  background-color: #f7edfb;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
 }
@@ -86,7 +88,7 @@ h1 {
 }
 
 .cont_menuKategorie li:hover {
-  background-color: #f1f1f1
+  background-color: #f2dcfa
 }
 
 .wrap_menuKategorie:hover .cont_menuKategorie {

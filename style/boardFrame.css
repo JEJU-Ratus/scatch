@@ -1,5 +1,5 @@
 .cont_notice{
-  margin-top: 100px;
+  margin-top: 76px;
 }
 .tit_notice {
   padding-top: 60px;
@@ -12,7 +12,7 @@ h2{
 
 .wrap_button {
   text-align: right;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
   font-size: 0;
 }
 

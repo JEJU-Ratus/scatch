@@ -15,6 +15,7 @@ a:hover{
     padding: 0px;
     font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
     font-size: 16px;
+    list-style-type: none;
 }
 
 /* 브라우저는 이미지를 글씨로 이해함. 그러므로 블록으로 만들어서 높이를 조절 */
@@ -23,3 +24,4 @@ img{
     display: block;
     /* 혹은 vertical-align:top; 이란걸 사용해도 되긴함. */
 }
+

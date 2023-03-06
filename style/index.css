@@ -1,22 +1,45 @@
-.cont_main{
-  margin-top: 100px;
-  padding-bottom: 220px; /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
+header{
+  background-color: rgba( 255, 255, 255, 0);
+
 }
-.cont_ad{/* 광고영역 */
-  height: 300px;
-  background-color: gray;
+
+.wrap_mainSlide{
+  overflow: hidden;
 }
-.cont_kategorie{ /* 대표 카테고리 3가지 */
-  display: flex;
-  justify-content: space-between;
-  margin: 50px 0;
+.cont_mainSlide{
+  width: 400vw;
+  white-space: nowrap;
+  font-size: 0;
+  transition: transform 0.5s;
 }
-.kategorie{ /* 카테고리 임시 위치 잡기 */
-  width: 250px;
-  height: 500px;
-  border: solid 1px blue;
+.box{
+  display: inline-block;
+  width: 100vw;
+  height: 800px;
+  border-radius: 10px;
+  background-repeat: no-repeat;
+  background-position: bottom 0px right 0px;
 }
-.cont_contents{ /* 메인영역 임시로 */
-  height: 500px;
-  background-color: yellow;
+.wrap_slider1{
+  background-image: url("../images/Sansin_Grandpa.png");
+  background-size: contain;
 }
+.wrap_slider2{
+  background-image: url("../images/madness_queen.png");
+  background-size: contain;
+}
+.wrap_slider3{
+  background-image: url("../images/mascot.png");
+  background-size: 400px;
+  background-position: bottom 70px right 100px;
+}
+.wrap_slider4{
+  background-image: url("../images/doni.png");
+  background-size: 400px;
+  background-position: bottom 100px right 100px;
+}
+.slide_btn{
+  --trans-value : 0vw;
+  transform: translate(let(--trans-value));
+}
+

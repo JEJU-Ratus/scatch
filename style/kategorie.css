@@ -4,7 +4,8 @@
   margin-bottom: 0;
 }
 .wrap_btnPage {
-  margin: 70px 0 30px 0;
+  margin-top: 70px;
+  padding-bottom: 30px;
   text-align: center;
   font-size: 0;
 }

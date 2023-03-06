@@ -1,5 +1,5 @@
 .cont_market {
-  margin-top: 100px;
+  margin-top: 76px;
 }
 h2{
   padding-top: 60px;
@@ -7,7 +7,10 @@ h2{
   margin-bottom: 60px;
 }
 .cont_kategoriBlock{
-  margin-bottom: 60px;
+  padding-bottom: 60px;
+}
+.cont_kategoriBlock:last-child{
+
 }
 .tit_kategori{
   margin-bottom: 10px;
@@ -47,6 +50,7 @@ h2{
 .cont_allKategori img {
   width: 208px;
   height: 400px;
+  object-fit: contain;
 } 
 
 

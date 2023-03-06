@@ -1,5 +1,5 @@
 .wrap_intro {
-  margin-top: 100px;
+  margin-top: 76px;
   /* 메인영역이 상단 메뉴바에 안가려지게  + 메인 영역 포지션 잡기*/
 }
 
@@ -60,7 +60,7 @@
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin-bottom:100px;
+  padding-bottom:100px;
 }
 
 .cont_introMastcot>img {
