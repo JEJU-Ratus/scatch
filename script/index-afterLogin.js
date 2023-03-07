@@ -9,21 +9,21 @@ let countImg = 0, // 현재 노출 이미지 번호
   powerOnOff = 1;
 
 
-
+  
   //재생 및 정지 버튼 조작
   for(let i=0;i<playPause.length;i++){
     playPause[i].addEventListener('click',function(){
       if(powerOnOff > 0){ // powerOnOff 가 1일때 재생 0일때 정지
         powerOnOff--;
         for(i=0;i<playPause.length;i++){
-          playPause[i].src = "images/play.png";
+          playPause[i].src = "../images/play.png";
         }
         clearInterval(timer); //정지
       }
       else{
         powerOnOff++
         for(i=0;i<playPause.length;i++){
-          playPause[i].src = "images/pause.png";
+          playPause[i].src = "../images/pause.png";
         }
         timer = setInterval(auto_slide, 8000) // 재생
       }
