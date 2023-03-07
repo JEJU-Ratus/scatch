@@ -62,8 +62,8 @@ h1 {
 
 .cont_menu>li>a {
   /* 상단영역 메뉴 디자인 */
-  padding: 22px 0;
-  font-size: 1.6rem;
+  padding: 16px 0;
+  font-size: 1.2rem;
   font-weight: bold;
   color: rgb(113, 138, 112);
 }
@@ -77,7 +77,7 @@ h1 {
   /* 상단영역 판매 캐릭터 상세메뉴 디자인 */
   display: none;
   list-style-type: none;
-  margin-top: 22px;
+  margin-top: 16px;
   width: 160px;
   background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
