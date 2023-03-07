@@ -7,12 +7,13 @@ header {
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
+  transition: 0.5s;
 }
 
 main {/* 메인영역 길이 */
   min-height: 100vh;
-  background-color: #dbebff;
+  background-color: rgb(214,230,245);
 }
 
 footer {
@@ -62,13 +63,13 @@ h1 {
 .cont_menu>li>a {
   /* 상단영역 메뉴 디자인 */
   padding: 22px 0;
-  font-size: 23px;
+  font-size: 1.6rem;
   font-weight: bold;
-  color: #9f2ec1;
+  color: rgb(113, 138, 112);
 }
 .cont_menu>li>a:hover {
   /* 상단영역 메뉴 마우스 올렸을 때 */
-  background-color: #f7edfb;
+  background-color: #ca5bec57;
   text-decoration: none;
 }
 
@@ -76,9 +77,9 @@ h1 {
   /* 상단영역 판매 캐릭터 상세메뉴 디자인 */
   display: none;
   list-style-type: none;
-  margin-top: 23px;
+  margin-top: 22px;
   width: 160px;
-  background-color: #f7edfb;
+  background-color: white;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   position: absolute;
 }
@@ -91,17 +92,22 @@ h1 {
 
 .cont_menuKategorie li:hover {
   /* 상단영역 판매 캐릭터 상세메뉴 마우스 올렸을 때 */
-  background-color: #f2dcfa;
+  background-color: #ca5bec57;
 }
 
 .wrap_menuKategorie:hover .cont_menuKategorie {
   display: block;
 }
+.cont_menuKategorie a{
+    font-weight: bold;
+    color: rgb(113, 138, 112);
+    text-decoration: none;
+}
 
 .wrap_info p {
   /* footer 정보 영역 속성 */
   color: gray;
-  font-size: 12px;
+  font-size: 0.8rem;
 }
 
 footer img {
@@ -113,6 +119,6 @@ footer img {
 .copyright {
   /* 하단영역 카피라이트 문구 */
   text-align: center;
-  font-size: 12px;
+  font-size: 0.8rem;
   color: gray;
 }

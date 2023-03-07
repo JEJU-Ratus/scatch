@@ -13,7 +13,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <!-- 상단 영역. 로고 및 메뉴 -->
     <div class="cont_frame siteWidth">
       <h1>
@@ -26,10 +26,10 @@
         <!-- 메뉴 -->
         <ul class="cont_menu">
           <li><a href="intro.html">사이트 소개</a></li>
-          <li class="wrap_menuKategorie"><a href="market.html">판매 캐릭터</a>
+          <li class="wrap_menuKategorie"><a href="market.html" class="menuKategorie">판매 캐릭터</a>
             <ul class="cont_menuKategorie">
               <li><a href="kategorie1.html">카테고리1</a></li>
-              <li><a href="#">카테고리2</a></li>
+              <li><a href="kategorie2.html">카테고리2</a></li>
             </ul>
           </li>
           <li><a href="login.html">로그인</a></li>
@@ -54,6 +54,7 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
+  <script src="script/frame.js"></script>
 </body>
 
 </html>
@@ -75,7 +76,7 @@
 </head>
 
 <body>
-  <header>
+  <header id="header">
     <!-- 상단 영역. 로고 및 메뉴 -->
     <div class="cont_frame siteWidth">
       <h1>
@@ -89,10 +90,10 @@
         <ul class="cont_menu">
           <li><a href="intro-afterLogin.html">사이트 소개</a></li>
           <li><a href="notice-afterLogin.html">공지사항</a></li>
-          <li class="wrap_menuKategorie"><a href="market-afterLogin.html">판매 캐릭터</a>
+          <li class="wrap_menuKategorie"><a href="market-afterLogin.html" class="menuKategorie">판매 캐릭터</a>
             <ul class="cont_menuKategorie">
-              <li><a href="../kategorie1.html">카테고리1</a></li>
-              <li><a href="kategorie2.html">카테고리2</a></li>
+              <li><a href="kategorie1-afterLogin.html">카테고리1</a></li>
+              <li><a href="kategorie2-afterLogin.html">카테고리2</a></li>
             </ul>
           </li>
           <li><a href="../index.html">로그아웃</a></li>
@@ -118,6 +119,7 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
+  <script src="../script/frame.js"></script>
 </body>
 
 </html>

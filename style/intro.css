@@ -43,17 +43,24 @@
 
 .wrap_circle span {
   position: absolute;
-  top: 32.77px;
   left: 11.645px;
   font-size: 20px;
 }
-
+.circle{
+  top: 32.77px;
+}
+.scatch_green{
+  top: 23px;
+}
 .blue {
   background-color: #3E8CEC;
 }
 
 .purple {
   background-color: #C95BEC;
+}
+.green {
+  background-color: rgb(113, 138, 112);
 }
 
 .cont_introMastcot {
