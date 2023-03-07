@@ -12,7 +12,6 @@ header{ /* 메인페이지 헤더 투명하게 */
   width: 400vw;
   font-size: 0;
   transition: 0.5s;
-  position: relative;
 }
 .box{ /* 메인슬라이더 한 칸 */
   display: inline-block;
@@ -20,7 +19,10 @@ header{ /* 메인페이지 헤더 투명하게 */
   height: 800px;
   position: relative;
 }
-.charactor img{ /* 광고 캐릭터 */
+.charactor{
+  position: relative;
+}
+.charactor img:first-child{ /* 광고 캐릭터 */
   width: 400px;
   height: 800px;
   object-fit: contain;
@@ -41,6 +43,7 @@ justify-content: center;
 .cont_mainText{ /* 메인 글귀, 버튼 */
   margin: auto 193px auto 0;;
   flex-basis: 500px;
+  position: relative;
 }
 .cont_mainText > strong{ /* 메인 글귀 */
   font-size: 4rem;
@@ -72,11 +75,11 @@ justify-content: center;
   width: 60px;
   height: 100px;
   top: 50%;
-  left: 0px;
+  left: -130px;
 }
 .btn_slideRight{/* 슬라이더 우측 이동 버튼 */
   width: 60px;
   height: 100px;
   top: 50%;
-  right: 0;
+  right: -130px;
 }

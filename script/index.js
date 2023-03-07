@@ -1,5 +1,5 @@
-const btn_slideLeft = document.querySelector('.btn_slideLeft'),// 왼쪽 화살표 버튼
-  btn_slideRight = document.querySelector('.btn_slideRight'),// 오른쪽 화살표 버튼
+const btn_slideLeft = document.getElementsByClassName('btn_slideLeft'),// 왼쪽 화살표 버튼
+  btn_slideRight = document.getElementsByClassName('btn_slideRight'),// 오른쪽 화살표 버튼
   cont_mainSlide = document.querySelector('.cont_mainSlide'),// 메인페이지의 카드 슬라이드.
   playPause = document.getElementsByClassName('playPause'), // 슬라이드 on/off 버튼
   allImg = 4; // 모든 이미지의 수
@@ -30,31 +30,33 @@ let countImg = 0, // 현재 노출 이미지 번호
     })
   }
 
+//왼쪽 화살표 클릭
+for(i=0;i<btn_slideLeft.length;i++){
+  btn_slideLeft[i].addEventListener('click',function(){
+    if(countImg > 0){
+      countImg--;
+      adjust_countImg();
+    }
+    else{
+      countImg = 3;
+      adjust_countImg();
+    }
+  });
+}
 
-// 오른쪽 화살표 클릭
-btn_slideRight.addEventListener('click', function () {
-  if (countImg < allImg - 1) {
-    countImg++;
-    adjust_countImg();
-  }
-  else {
-    countImg = 0;
-    adjust_countImg();
-  }
-});
-
-
-// 왼쪽 화살표 클릭
-btn_slideLeft.addEventListener('click', function () {
-  if (countImg > 0) {
-    countImg--;
-    adjust_countImg();
-  }
-  else {
-    countImg = 3;
-    adjust_countImg();
-  }
-});
+//오른쪽 화살표 클릭
+for(i=0;i<btn_slideRight.length;i++){
+  btn_slideRight[i].addEventListener('click',function(){
+    if(countImg < allImg -1){
+      countImg++;
+      adjust_countImg();
+    }
+    else{
+      countImg = 0;
+      adjust_countImg();
+    }
+  });
+}
 
 
 // 현재 노출 이미지 번호 조정 함수
