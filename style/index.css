@@ -1,54 +1,80 @@
-header{
-  background-color: rgba( 255, 255, 255, 0);
+img{
+  display: inline-block;
+}
+header{ /* 메인페이지 헤더 투명하게 */
+  background-color: rgba(255, 255, 255, 0);
 
 }
-.wrap_mainSlide{
+.wrap_mainSlide{ /* 슬라이드를 넘어서는 길이는 잘라버리기 */
   overflow: hidden;
 }
-.cont_mainSlide{
+.cont_mainSlide{ /* 메인 슬라이더 세팅 */
   width: 400vw;
-  white-space: nowrap;
   font-size: 0;
   transition: 0.5s;
   position: relative;
 }
-.box{
+.box{ /* 메인슬라이더 한 칸 */
   display: inline-block;
   width: 100vw;
   height: 800px;
-  border-radius: 10px;
-  background-repeat: no-repeat;
-  background-position: bottom 0px right 0px;
+  position: relative;
 }
-.wrap_slider1{
-  background-image: url("../images/Sansin_Grandpa.png");
-  background-size: contain;
+.charactor img{ /* 광고 캐릭터 */
+  width: 400px;
+  height: 800px;
+  object-fit: contain;
 }
-.wrap_slider2{
-  background-image: url("../images/madness_queen.png");
-  background-size: contain;
+.playPause{ /* 슬라이더 정지버튼 */
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 83px;
+  left: 5px;
+  cursor: pointer;
 }
-.wrap_slider3{
-  background-image: url("../images/mascot.png");
-  background-size: 400px;
-  background-position: bottom 70px right 100px;
+
+.cont_welcome{ /* 메인 글귀, 버튼, 광고 캐릭터 */
+display: flex;
+justify-content: center;
 }
-.wrap_slider4{
-  background-image: url("../images/doni.png");
-  background-size: 400px;
-  background-position: bottom 100px right 100px;
+.cont_mainText{ /* 메인 글귀, 버튼 */
+  margin: auto 193px auto 0;;
+  flex-basis: 500px;
 }
-.btn_slideLeft, .btn_slideRight{
+.cont_mainText > strong{ /* 메인 글귀 */
+  font-size: 4rem;
+}
+.cont_mainText > p{
+  margin-top: 15px;
+  font-weight: bold;
+}
+.btn_linkCharactor{/* 슬라이드 내부 링크버튼(캐릭터 보러가기, 다른 캐릭터 보러가기) */
+  margin-top: 100px;
+}
+.btn_linkCharactor a{
+  padding: 20px;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn_linkCharactor a:first-child{
+  padding: 20px 42.5px;
+}
+.btn_slideLeft, .btn_slideRight{ /* 슬라이더 좌 우 이동 버튼 */
   cursor: pointer;
   position: absolute;
 }
-.btn_slideLeft{
+.btn_slideLeft{ /* 슬라이더 좌측 이동 버튼 */
   width: 60px;
   height: 100px;
   top: 50%;
   left: 0px;
 }
-.btn_slideRight{
+.btn_slideRight{/* 슬라이더 우측 이동 버튼 */
   width: 60px;
   height: 100px;
   top: 50%;
