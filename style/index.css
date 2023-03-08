@@ -31,7 +31,7 @@ header{ /* 메인페이지 헤더 투명하게 */
   width: 70px;
   height: 70px;
   position: absolute;
-  top: 83px;
+  top: 62px;
   left: 5px;
   cursor: pointer;
 }

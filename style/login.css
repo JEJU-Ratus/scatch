@@ -1,7 +1,7 @@
 .wrap_login{ /* 로그인 영역 전체 포지션(로그인창이 있는 window창 포함) */
   display: flex;
   justify-content: center;
-  margin-top: 76px;
+  margin-top: 53px;
 }
 .cont_login{ /* 로그인창 영역 */
   margin-top: 15%;
