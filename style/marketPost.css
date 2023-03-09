@@ -1,3 +1,31 @@
-.cont_marketPost{
+/* marketPost.css - 캐릭터 판매 게시물 페이지의 CSS 스타일 지정 */
+
+.cont_marketPost {
   margin-top: 53px;
 }
+
+h2 {
+  padding: 60px 0 20px;
+  font-size: 1.75rem;
+  font-weight: 100;
+  border-bottom: solid 2px;
+}
+
+
+.wrap_marketPost {
+  margin-bottom: 30px;
+  background-color: white;
+  text-align: center;
+}
+
+.wrap_marketPost img {
+  display: inline-block;
+  width: 400px;
+  height: 600px;
+  object-fit: contain;
+}
+
+.wrap_button a:nth-child(-n + 2) {
+  margin-left: 0;
+}
+

@@ -39,6 +39,9 @@
 
 - kategorie2.html - 판매캐릭터-카테고리2 페이지 / kategorie2-afterLogin.html - (로그인 되었을 때)
 
+- kategorie1Post.html/kategorie2Post.html - 판매캐릭터 -카테고리1의 게시물 페이지, 카테고리2 게시물 페이지 
+  / kategorie1Post-afterLogin.html, kategorie2Post-afterLogin.html - (로그인 되었을 때)
+
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
 
@@ -122,3 +125,8 @@
 
 - 메인페이지 완성 / afterLogin 화면도 완성.
 
+- 3월 8일 상단 프레임 마진 설정
+
+- 판매캐릭터 게시물 페이지 완성 / afterLogin도 완성
+
+- CSS 정리. CSS 분리로 overflow 되는 부분을 줄임.

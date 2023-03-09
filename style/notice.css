@@ -1,3 +1,5 @@
+/* notice.css - 공지사항 페이지의 CSS 스타일 지정 */
+
 .cont_notice_li {
   text-align: center;
   border-top: 2px solid #000;
@@ -38,31 +40,6 @@
   text-align: left;
 }
 .wrap_btnPage {
-  margin: 70px 0 30px 0;
-  text-align: center;
-  font-size: 0;
-}
-
-.wrap_btnPage>a {
-  display: inline-block;
-  padding: 5px;
-  vertical-align: middle;
-  width: 32px;
-  height: 32px;
-  border: solid 1px #ddd;
-}
-.wrap_btnPage > .wrap_move{
-  padding-top: 7px;
-  font-size: 0.75rem;
-}
-.space{
-  letter-spacing: -4px;
-}
-.wrap_btnPage > .wrap_check{
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
-}
-.wrap_btnNum{
-  font-size: 0.9rem;
+  margin-top: 70px;
+  padding-bottom: 30px;
 }

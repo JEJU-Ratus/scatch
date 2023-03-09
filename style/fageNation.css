@@ -1,0 +1,30 @@
+/* fageNation.css - 페이지 네이션을 위한 CSS */
+
+.wrap_btnPage {
+  text-align: center;
+  font-size: 0;
+}
+
+.wrap_btnPage>a {
+  display: inline-block;
+  padding: 5px;
+  vertical-align: middle;
+  width: 32px;
+  height: 32px;
+  border: solid 1px #ddd;
+}
+.wrap_btnPage > .wrap_move{
+  padding-top: 7px;
+  font-size: 0.75rem;
+}
+.space{
+  letter-spacing: -4px;
+}
+.wrap_btnPage > .wrap_check{
+  background-color: #000;
+  border-color: #000;
+  color: #fff;
+}
+.wrap_btnNum{
+  font-size: 0.9rem;
+}

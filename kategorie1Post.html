@@ -8,6 +8,8 @@
   <title>Scatch - 스캐치</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/frame.css">
+  <link rel="stylesheet" href="style/post.css">
+  <link rel="stylesheet" href="style/postBtn.css">
   <link rel="stylesheet" href="style/marketPost.css">
 
 </head>
@@ -26,6 +28,7 @@
         <!-- 메뉴 -->
         <ul class="cont_menu">
           <li><a href="intro.html">사이트 소개</a></li>
+          <li><a href="notice.html">공지사항</a></li>
           <li class="wrap_menuKategorie"><a href="market.html" class="menuKategorie">판매 캐릭터</a>
             <ul class="cont_menuKategorie">
               <li><a href="kategorie1.html">카테고리1</a></li>
@@ -39,8 +42,36 @@
     </div>
   </header>
   <main>
-    <div class="cont_marketPost siteWidth">
+    <section class="cont_marketPost siteWidth">
       <!-- 메인영역 구조 -->
+      <h2>제목이 들어갈 자리</h2>
+      <div class="wrap_postInfo">
+        <dl>
+          <dt>번호</dt>
+          <dd>1</dd>
+        </dl>
+        <dl>
+          <dt>작성자</dt>
+          <dd>관리자</dd>
+        </dl>
+        <dl>
+          <dt>작성일</dt>
+          <dd class="postDate"></dd>
+        </dl>
+        <dl>
+          <dt>조회수</dt>
+          <dd>33</dd>
+        </dl>
+      </div>
+      <div class="wrap_marketPost">
+        <img src="./images/Sansin_Grandpa.png" alt="온몸에 나무가 자란 화가 난 돌하르방 몬스터 캐릭터">
+        <p>대충 캐릭터 가격</p>
+        <p>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명</p>
+      </div>
+      <div class="wrap_button">
+        <a href="kategorie1.html" class="btn_type1">목록</a>
+      </div>
+    </section>
   </main>
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->

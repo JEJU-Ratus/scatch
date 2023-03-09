@@ -1,3 +1,5 @@
+/* login.css - 로그인 페이지의 CSS 스타일 지정 */
+
 .wrap_login{ /* 로그인 영역 전체 포지션(로그인창이 있는 window창 포함) */
   display: flex;
   justify-content: center;

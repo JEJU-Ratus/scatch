@@ -5,10 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스캐치 : 사이트 소개</title>
+  <title>Scatch - 스캐치</title>
   <link rel="stylesheet" href="../style/reset.css">
   <link rel="stylesheet" href="../style/frame.css">
-  <link rel="stylesheet" href="../style/intro.css">
+  <link rel="stylesheet" href="../style/post.css">
+  <link rel="stylesheet" href="../style/postBtn.css">
+  <link rel="stylesheet" href="../style/marketPost.css">
+
 </head>
 
 <body>
@@ -39,35 +42,38 @@
     </div>
   </header>
   <main>
-    <div class="wrap_intro siteWidth">
+    <section class="cont_marketPost siteWidth">
       <!-- 메인영역 구조 -->
-      <section class="cont_intro">
-        <h2>LOGO</h2>
-        <img class="img_introLogo" src="../images/logo_final.png" alt="로고이미지">
-        <p>기성품 디자인을 구매한다라는 의미로 쇼핑 카트를 모티브하여 로고를 제작 </p>
-        <h2>COLOR</h2>
-        <div class="cont_siteColor">
-          <div class="wrap_circle blue"><span class="circle">3E8CEC</span></div>
-          <div class="wrap_circle purple"><span class="circle">C95BEC</span></div>
-          <div class="wrap_circle green"><span class="scatch_green">SCATCH<br>GRREN</span></div>
-        </div>
-        <p>3E8CEC는 자유로운 파랑새의 이미지와 편안함을 상징</p>
-        <p>C95BEC의 색상은 창의력과 상상력을 상징함. 그리하여 자유롭게 그림을 판매하는 사이트입니다.</p>
-        <p>SCATCH GREEN은 rgb&#40;113, 138, 112&#41;로, 사이트를 이용할 때 눈에 편안함을 주었습니다.</p>
-        <h2>MASCOT</h2>
-        <div class="cont_introMastcot">
-          <img src="../images/mascot_final.png" alt="마스코트이미지">
-          <div class="cont_mascotText">
-            <h3>판디</h3>
-            <p>-그림 그리기를 좋아하는 화가 꿈나무 판다-</p>
-            <p>
-              그림이 서툴러서 언제나 물감을 뭍히고 다녀요!
-              트럭이랑 면허증은 어떻게 구했는지 전국을 돌아다니며 그림을 팔고 있답니다.
-            </p>
-          </div>
-        </div>
-      </section>
-    </div>
+      <h2>제목이 들어갈 자리</h2>
+      <div class="wrap_postInfo">
+        <dl>
+          <dt>번호</dt>
+          <dd>1</dd>
+        </dl>
+        <dl>
+          <dt>작성자</dt>
+          <dd>관리자</dd>
+        </dl>
+        <dl>
+          <dt>작성일</dt>
+          <dd class="postDate"></dd>
+        </dl>
+        <dl>
+          <dt>조회수</dt>
+          <dd>33</dd>
+        </dl>
+      </div>
+      <div class="wrap_marketPost">
+        <img src="../images/madness_queen.png" alt="체스말을 염동력으로 조종하는 뼈로된 드레스를 입은 여자 캐릭터">
+        <p>대충 캐릭터 가격</p>
+        <p>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명</p>
+      </div>
+      <div class="wrap_button">
+        <a href="#" class="btn_type1 wrap_delete" id="btn_delete">삭제</a>
+        <a href="kategorie2-afterLogin.html" class="btn_type1">목록</a>
+        <a href="#">수정</a>
+      </div>
+    </section>
   </main>
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
@@ -82,6 +88,7 @@
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
   <script src="../script/frame.js"></script>
+  <script src="../script/kategorie2Post-afterLogin.js"></script>
 </body>
 
 </html>

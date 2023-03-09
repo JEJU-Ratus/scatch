@@ -1,0 +1,30 @@
+/* postBtn.css - 등록, 수정, 삭제 등의 버튼들에대한 CSS 스타일 지정 */
+
+.wrap_button {
+  text-align: right;
+  padding-bottom: 30px;
+  font-size: 0;
+}
+
+.wrap_button a {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  margin-left: 10px;
+  width: 80px;
+  border: 1px solid #000;
+  border-radius: 2px;
+  font-size: 0.9rem;
+}
+.wrap_button a:hover {
+  text-decoration: none;
+}
+.btn_type1 {
+  background-color: #000;
+  color: #fff;
+}
+
+.wrap_delete{
+  float: left;
+  clear: both;
+}

@@ -1,38 +1,14 @@
-.wrap_post{
+/* 공지사항 게시물 페이지의 기본 CSS 스타일 지정 */
+
+.wrap_noticePost{
   border-top: 2px solid #000;
   border-bottom: 2px solid #000;
   margin-bottom: 30px;
 }
-.tit_post >p {
+.tit_noticePost >p {
   padding: 20px 15px;
   font-size: 20px;
-  border-bottom: 1px dashed #ddd;
-}
-.wrap_info{
-  padding: 15px;
-  border-bottom: 1px solid #999;
-  position: relative;
-}
-.wrap_info > dl, .wrap_info dt, .wrap_info dd{
-  display: inline-block;
-}
-.wrap_info dl::after{
-  content: "";
-  position: absolute;
-  height: 12px;
-  top: 23px;
-  border: 1px solid;
-  
-}
-.wrap_info dl:last-child::after{
-  content: "";
-}
-.wrap_info dt, .wrap_info dd{
-  vertical-align: middle;
-}
-.wrap_info dd{
-  margin-right: 10px;
-  color: gray;
+  border-bottom: 1px dashed #999;
 }
 
 .wrap_content{

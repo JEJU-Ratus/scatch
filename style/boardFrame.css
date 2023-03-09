@@ -1,3 +1,5 @@
+/* boardFrame.css - 공지사항 페이지, 게시물 작성 페이지의 기본 틀  CSS 스타일 지정 */
+
 .cont_notice{
   margin-top: 53px;
 }
@@ -9,34 +11,6 @@
 h2{
   font-size: 28px;
 }
-
-.wrap_button {
-  text-align: right;
-  padding-bottom: 30px;
-  font-size: 0;
-}
-
-.wrap_button a {
-  display: inline-block;
-  text-align: center;
-  margin-left: 10px;
-  padding: 10px;
-  width: 80px;
-  border: 1px solid #000;
-  border-radius: 2px;
-  font-size: 0.9rem;
-}
-
-
-.wrap_button a:hover {
-  text-decoration: none;
-}
-
-.wrap_button a:first-child {
+.wrap_button a:nth-child(-n + 2) {
   margin-left: 0;
-}
-
-.btn_type1 {
-  background-color: #000;
-  color: #fff;
 }

@@ -1,0 +1,28 @@
+/* post.css - 캐릭터 판매 게시글 페이지의 글 작성자, 작성일 등 정보가 나오는 란의 CSS 스타일 지정 */
+
+.wrap_postInfo{
+  padding: 15px;
+  border-bottom: 1px solid #999;
+  position: relative;
+}
+.wrap_postInfo > dl, .wrap_postInfo dt, .wrap_postInfo dd{
+  display: inline-block;
+}
+.wrap_postInfo dl::after{
+  content: "";
+  position: absolute;
+  height: 12px;
+  top: 23px;
+  border: 1px solid;
+  
+}
+.wrap_postInfo dl:last-child::after{
+  content: "";
+}
+.wrap_postInfo dt, .wrap_postInfo dd{
+  vertical-align: middle;
+}
+.wrap_postInfo dd{
+  margin-right: 10px;
+  color: gray;
+}

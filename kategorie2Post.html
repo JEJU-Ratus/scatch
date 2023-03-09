@@ -5,13 +5,13 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스캐치 : 공지사항 - 게시글</title>
+  <title>Scatch - 스캐치</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/frame.css">
-  <link rel="stylesheet" href="style/boardFrame.css">
   <link rel="stylesheet" href="style/post.css">
   <link rel="stylesheet" href="style/postBtn.css">
-  <link rel="stylesheet" href="style/noticePost.css">
+  <link rel="stylesheet" href="style/marketPost.css">
+
 </head>
 
 <body>
@@ -21,7 +21,7 @@
       <h1>
         <!-- 로고 -->
         <a href="index.html">
-          <img class="img_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
+          <img class="img_logo" src="images/logo_final.png" alt="스캐치 로고 이미지">
         </a>
       </h1>
       <nav>
@@ -42,45 +42,35 @@
     </div>
   </header>
   <main>
-    <section class="cont_notice siteWidth">
-      <div class="tit_notice">
-        <h2>공지사항</h2>
+    <section class="cont_marketPost siteWidth">
+      <!-- 메인영역 구조 -->
+      <h2>제목이 들어갈 자리</h2>
+      <div class="wrap_postInfo">
+        <dl>
+          <dt>번호</dt>
+          <dd>1</dd>
+        </dl>
+        <dl>
+          <dt>작성자</dt>
+          <dd>관리자</dd>
+        </dl>
+        <dl>
+          <dt>작성일</dt>
+          <dd class="postDate"></dd>
+        </dl>
+        <dl>
+          <dt>조회수</dt>
+          <dd>33</dd>
+        </dl>
       </div>
-      <div class="wrap_noticePost">
-        <div class="tit_noticePost">
-          <p>제목이 들어갈 자리.</p>
-        </div>
-        <div class="wrap_postInfo">
-          <dl>
-            <dt>번호</dt>
-            <dd>1</dd>
-          </dl>
-          <dl>
-            <dt>작성자</dt>
-            <dd>관리자</dd>
-          </dl>
-          <dl>
-            <dt>작성일</dt>
-            <dd class="postDate"></dd>
-          </dl>
-          <dl>
-            <dt>조회수</dt>
-            <dd>33</dd>
-          </dl>
-        </div>
-        <div class="wrap_content">
-          <p>내용이 들어가는 자리.<br>
-            내용이 들어가는 자리.<br>
-            내용이 들어가는 자리.<br>
-            내용이 들어가는 자리.<br>
-            내용이 들어가는 자리.</p>
-        </div>
+      <div class="wrap_marketPost">
+        <img src="./images/madness_queen.png" alt="온체스말을 염동력으로 조종하는 뼈로된 드레스를 입은 여자 캐릭터">
+        <p>대충 캐릭터 가격</p>
+        <p>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명</p>
       </div>
-      <div>
       <div class="wrap_button">
-        <a href="notice.html" class="btn_type1">목록</a>
+        <a href="kategorie2.html" class="btn_type1">목록</a>
       </div>
-    </div>
     </section>
   </main>
   <footer>
@@ -95,7 +85,6 @@
     </div>
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
-  <script src="script/notice.js"></script>
   <script src="script/frame.js"></script>
 </body>
 

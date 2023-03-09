@@ -1,23 +1,14 @@
-.cont_market {
-  margin-top: 53px;
-}
-h2{
-  padding-top: 60px;
-  font-size: 28px;
-  margin-bottom: 60px;
-}
-.cont_kategoriBlock{
-  padding-bottom: 60px;
-}
-.cont_kategoriBlock:last-child{
+/* 캐릭터 판메 페이지의 CSS 스타일 지정 */
 
+h2{
+  margin-bottom: 60px;
 }
 .tit_kategori{
   margin-bottom: 10px;
   padding-bottom: 15px;
   border-bottom: 2px solid #000;
 }
-.cont_allKategori h3{
+h3{
   display: inline-block;
   font-size: 22px;
 }
@@ -27,7 +18,6 @@ h2{
   margin-right: 12px;
   position: relative;
 }
-
 .tit_more::after {
   display: inline-block;
   content: "";
@@ -38,26 +28,6 @@ h2{
   position: absolute;
   top: 0.5px;
 }
-
-
-.cont_allKategori a{
-  display: inline-block;
-}
-.cont_allKategori li {
-  display: inline-block;
-  list-style-type: none;
-}
-.cont_allKategori img {
-  width: 208px;
-  height: 400px;
-  object-fit: contain;
-} 
-
-
-.tit_post>a {
-  width: 200px;
-  font-weight: bold;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+.cont_kategoriBlock{
+  padding-bottom: 60px;
 }

@@ -1,3 +1,5 @@
+/* join.css - 회원가입 창 CSS 스타일 지정 */
+
 .wrap_join{ /* 회원가입 창 + 둘러싸고 있는 window 창 까지 포지션 */
   display: flex;
   justify-content: center;

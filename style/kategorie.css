@@ -1,35 +1,16 @@
-.cont_allKategori h2{
+/* kategorie.css - 카테고리 1,2의 CSS 스타일 지정 */
+
+h2{
   padding-bottom: 20px;
   border-bottom: 2px solid #000;
-  margin-bottom: 0;
 }
 .wrap_btnPage {
   margin-top: 70px;
   padding-bottom: 30px;
-  text-align: center;
-  font-size: 0;
 }
-
-.wrap_btnPage>a {
-  display: inline-block;
-  padding: 5px;
-  vertical-align: middle;
-  width: 32px;
-  height: 32px;
-  border: solid 1px #ddd;
-}
-.wrap_btnPage > .wrap_move{
-  padding-top: 7px;
-  font-size: 0.75rem;
-}
-.space{
-  letter-spacing: -4px;
-}
-.wrap_btnPage > .wrap_check{
-  background-color: #000;
-  border-color: #000;
-  color: #fff;
-}
-.cont_allKategori li{
+.cont_allKategori ul{
   margin-bottom: 20px;
+}
+.cont_allKategori ul:last-child{
+  margin-bottom: 0;
 }

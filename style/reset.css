@@ -1,6 +1,6 @@
+/* reset.css - 사이트 제작 전 요소들 초기화 하는 CSS */
 
 /*a 태그 링크옵션*/
-
 a{
     text-decoration: none;
     color: black;

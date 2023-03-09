@@ -6,9 +6,9 @@ btn_delete.addEventListener('click',function(){
   if(delete_message){
     console.log("확인")
     alert("삭제되었습니다.");
-    location.replace("../afterLogin/notice-afterLogin.html");
+    location.replace("../afterLogin/kategorie2-afterLogin.html");
   } 
   else{
     console.log("취소");
   }
-})
+});
