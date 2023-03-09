@@ -1,3 +1,4 @@
+// 네이버 스마트 에디터 2.0
 let oEditors = []
 
 smartEditor = function () {

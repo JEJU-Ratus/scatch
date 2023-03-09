@@ -8,7 +8,7 @@ const pwdCheck = document.getElementById('pwdCheck'); // 비밀번호확인 파�
 const tel = document.getElementById('tel'); // 전화번호 파라미터 연동
 const email = document.getElementById('email'); //email 파라미터 연동
 
-//유효성 검증증
+//유효성 검증
 const REG_NAME = /^[가-힣]{2,30}$/; // 이름 규칙
 const REG_YEAR = /^(19[0-9][0-9]|20\d{2})$/; // 생년월일 중 연도 규칙
 const REG_DAY = /^([1-9]|[1-2][0-9]|3[0-1])$/ // 생년월일 중 일 규칙
