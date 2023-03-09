@@ -23,7 +23,9 @@
   background-color: #000;
   color: #fff;
 }
-
+.btn_type2{
+  background-color: white;
+}
 .wrap_delete{
   float: left;
   clear: both;
