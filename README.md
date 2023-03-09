@@ -130,3 +130,5 @@
 - 판매캐릭터 게시물 페이지 완성 / afterLogin도 완성
 
 - CSS 정리. CSS 분리로 overflow 되는 부분을 줄임.
+
+- JavaScript 조정. 불필요한 중복 제거
