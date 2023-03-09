@@ -42,6 +42,10 @@
 - kategorie1Post.html/kategorie2Post.html - 판매캐릭터 -카테고리1의 게시물 페이지, 카테고리2 게시물 페이지 
   / kategorie1Post-afterLogin.html, kategorie2Post-afterLogin.html - (로그인 되었을 때)
 
+- kategorie1PostWrite-afterLogin/kategorie2PostWrite-afterLogin - 판매캐릭터 작성 페이지 (로그인 되었을 때)
+
+- kategorie1WriteEdit-afterLogin/kategorie2WriteEdit-afterLogin - 판매캐릭터 수정 페이지 (로그인 되었을 때)
+
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
 
@@ -129,6 +133,8 @@
 
 - 판매캐릭터 게시물 페이지 완성 / afterLogin도 완성
 
-- CSS 정리. CSS 분리로 overflow 되는 부분을 줄임.
+- 3월 9일 CSS 정리. CSS 분리로 overflow 되는 부분을 줄임.
 
 - JavaScript 조정. 불필요한 중복 제거
+
+- 판매캐릭터 게시물 작성, 수정 페이지 완성
