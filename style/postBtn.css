@@ -12,20 +12,20 @@
   padding: 10px;
   margin-left: 10px;
   width: 80px;
-  border: 1px solid #000;
-  border-radius: 2px;
+  border-radius: 5px;
   font-size: 0.9rem;
 }
 .wrap_button a:hover {
   text-decoration: none;
 }
 .btn_type1 {
+  border: 1px solid #000;
   background-color: #000;
   color: #fff;
 }
 .btn_type2{
   background-color: white;
-  border-color: white;
+  border: 1px solid white;
 }
 .wrap_delete{
   float: left;
