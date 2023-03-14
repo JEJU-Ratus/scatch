@@ -1,5 +1,13 @@
 /* reset.css - 사이트 제작 전 요소들 초기화 하는 CSS */
 
+
+@font-face { /* 폰트 추가 */
+  font-family: 'KCCChassam';
+  src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2302@1.0/KCCChassam.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+}
+
 /*a 태그 링크옵션*/
 a{
     text-decoration: none;
@@ -13,7 +21,7 @@ a:hover{
     box-sizing: border-box;
     margin: 0px;
     padding: 0px;
-    font-family: -apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
+    font-family:-apple-system,BlinkMacSystemFont,"Malgun Gothic","맑은 고딕",helvetica,"Apple SD Gothic Neo",sans-serif;
     font-size: 16px;
     list-style-type: none;
 }

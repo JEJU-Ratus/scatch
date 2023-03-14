@@ -1,4 +1,8 @@
 /* index.css - 메인 페이지의 CSS 스타일을 지정 */
+*{
+  font-family: 'KCCChassam';
+}
+
 img{
   display: inline-block;
 }
@@ -43,7 +47,7 @@ justify-content: center;
 }
 .cont_mainText{ /* 메인 글귀, 버튼 */
   margin: auto 193px auto 0;;
-  flex-basis: 500px;
+  flex-basis: 450px;
   position: relative;
 }
 .cont_mainText > strong{ /* 메인 글귀 */

@@ -2,6 +2,10 @@
 
 h2{
   margin-bottom: 60px;
+  font-family: 'KCCChassam';
+}
+h3{
+  font-family: 'KCCChassam';
 }
 .tit_kategori{
   margin-bottom: 10px;
@@ -17,16 +21,17 @@ h3{
   clear: both;
   margin-right: 12px;
   position: relative;
+  font-family: 'KCCChassam';
 }
 .tit_more::after {
   display: inline-block;
   content: "";
-  background: url(../images/right.png) no-repeat;
+  background: url(../images/tit_more.png) no-repeat;
   background-size: 22px;
   width: 14px;
   height: 20px;
   position: absolute;
-  top: 0.5px;
+  top: -1.5px;
 }
 .cont_kategoriBlock{
   padding-bottom: 60px;

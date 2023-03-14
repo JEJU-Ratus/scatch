@@ -1,0 +1,44 @@
+/* idpwSearchfinish 그리고 join-finish의 틀 */
+*{
+  font-family: 'KCCChassam';
+}
+.wrap_finish{
+  margin-top: 53px;
+}
+
+.cont_finish{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 15% 0 300px;
+}
+.cont_letKnow{
+  flex-basis: 363px;
+  margin-left: 70px;
+  text-align: center;
+}
+.cont_letKnow h2{
+  font-size: 2rem;
+  font-weight: lighter;
+}
+
+.cont_letKnow span{
+  font-size: 1.5rem;
+  color: rgb(113, 138, 112);
+}
+
+.btn_guide{
+  margin-top: 100px;
+}
+.btn_guide a{
+  padding: 20px 42.5px;
+  border-radius: 5px;
+  background-color: black;
+  font-size: 1.2rem;
+  color: white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.btn_guide a:last-child{
+  padding: 20px 60.7px;
+}

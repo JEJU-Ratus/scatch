@@ -10,6 +10,7 @@
 
 h2{
   font-size: 28px;
+  font-family: 'KCCChassam';
 }
 .wrap_button a:nth-child(-n + 2) {
   margin-left: 0;

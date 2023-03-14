@@ -1,0 +1,55 @@
+*{
+  font-family: 'KCCChassam';
+}
+
+.wrap_myPage{
+  margin-top: 53px;
+  padding-top: 10%;
+}
+.cont_profile{
+  margin: 0 auto;
+  padding: 10px;
+  width: 40%;
+  border-radius: 20px;
+  background-color: #b9d8fe;
+  position: relative;
+}
+h2{
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+.cont_profile > ul{
+  position: relative;
+}
+.cont_profile li{
+  display: inline-block;
+}
+.cont_profile li:last-child::before{
+  content: '';
+  display: inline-block;
+  background-color: black;
+  width: 1px;
+  height: 220px;
+  position: absolute;
+  top: -61px;
+  left: 198px;
+}
+.cont_myInfo{
+  margin-left: 20px;
+}
+.wrap_profileCircle{
+  text-align: center;
+  margin: 0 20px;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background-image: url('../images/profileImsi.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.img_profileLogo{
+  width: 105px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+}

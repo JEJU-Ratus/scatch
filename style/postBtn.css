@@ -12,8 +12,10 @@
   padding: 10px;
   margin-left: 10px;
   width: 80px;
-  border-radius: 5px;
+  border-radius: 10px;
   font-size: 0.9rem;
+  font-family: 'KCCChassam';
+
 }
 .wrap_button a:hover {
   text-decoration: none;

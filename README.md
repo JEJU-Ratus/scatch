@@ -46,6 +46,14 @@
 
 - kategorie1WriteEdit-afterLogin/kategorie2WriteEdit-afterLogin - 판매캐릭터 수정 페이지 (로그인 되었을 때)
 
+- idpwSearch.html - 아이디 비밀번호 찾기 페이지
+
+- idSearchFinish.html - 아이디 찾기 완료 페이지
+
+- pwSearchFinish.html - 비밀번호 찾기 완료 페이지
+
+- myPage-afterLogin - 내 정보 페이지
+
 ### 개발 과정
 - 23년 1월 20일 첫 아이디어 회의
 
@@ -138,3 +146,9 @@
 - JavaScript 조정. 불필요한 중복 제거
 
 - 판매캐릭터 게시물 작성, 수정 페이지 완성
+
+- 23년 3월 14일 아이디 비밀번호 찾기 페이지 완성.
+
+- 아이디/비밀번호 찾기 완료 페이지 완성
+
+- 내정보 페이지 완성. (사이트 최종 완성. 약간의 수정 있을 수 있음.)

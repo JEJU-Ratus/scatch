@@ -1,0 +1,95 @@
+.wrap_idpwSearch {
+  /* 상단 메뉴바에 가리지 않도록. */
+  margin-top: 53px;
+  display: flex;
+  justify-content: center;
+}
+
+.cont_searchBox {
+  margin-top: 15%;
+  margin-bottom: 300px;
+  padding: 33px;
+  text-align: center;
+  border-radius: 30px;
+  background-color: #3E8CEC;
+}
+.cont_idpwSelect{
+  position: relative;
+}
+#underLine{
+  position: absolute;
+  width: 106px;
+  height: 2px;
+  background-color: white;
+  top: 30px;
+  left: 50px;
+  transition: 0.5s;
+}
+.cont_idpwSelect a{
+  color: gray;
+  font-size: 1.5rem;
+  text-decoration: none;
+  font-family: 'KCCChassam';
+}
+.cont_idpwSelect a.active{
+  color: white;
+}
+.wrap_blind {
+  /* 아이디 찾기 및 비밀번호 찾기 가리기 */
+  display: none;
+}
+
+.show {
+  /* 아이디 찾기 및 비밀번호 찾기를 스크립트동작을 통해 보이게 하기 */
+  display: block;
+}
+.wrap_idSearch{
+  margin-top: 47px;
+}
+.wrap_uname {
+  /* 이름 라벨의 우측 마진을 38px로 */
+  margin: 0 16px;
+}
+
+.wrap_pwSearch{
+  margin-top: 10px;
+}
+.wrap_uid {
+  /* 아이디 라벨의 우측 마진을 22px로 */
+  margin: 0 9px;
+}
+
+label {
+  white-space: nowrap;
+  color: white;
+  font-family: 'KCCChassam';
+}
+
+input{
+  margin: 10px 0;
+  padding: 10px;
+  width: 270px;
+  height: 37px;
+  border: 1px solid #3E8CEC;
+  border-radius: 10px;
+  outline: none;
+}
+
+
+
+button{
+  width: 333px;
+  height: 50px;
+  border: none;
+  border-radius: 30px;
+  background-color: white;
+  font-family: 'KCCChassam';
+}
+.btn_idSearch{
+  margin-top: 50px;
+  cursor: pointer;
+}
+.btn_pwSearch{
+  margin-top: 30px;
+  cursor: pointer;
+}

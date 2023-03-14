@@ -5,13 +5,10 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>스캐치 : 글 제목</title>
+  <title>스캐치 : 아이디 비밀번호 찾기</title>
   <link rel="stylesheet" href="style/reset.css">
   <link rel="stylesheet" href="style/frame.css">
-  <link rel="stylesheet" href="style/post.css">
-  <link rel="stylesheet" href="style/postBtn.css">
-  <link rel="stylesheet" href="style/marketPost.css">
-
+  <link rel="stylesheet" href="style/idpwSearch.css">
 </head>
 
 <body>
@@ -21,7 +18,7 @@
       <h1>
         <!-- 로고 -->
         <a href="index.html">
-          <img class="img_logo" src="images/logo_final.png" alt="스캐치 로고 이미지">
+          <img class="img_logo" src="./images/logo_final.png" alt="스캐치 로고 이미지">
         </a>
       </h1>
       <nav>
@@ -42,36 +39,49 @@
     </div>
   </header>
   <main>
-    <section class="cont_marketPost siteWidth">
+    <div class="wrap_idpwSearch siteWidth">
       <!-- 메인영역 구조 -->
-      <h2>제목이 들어갈 자리</h2>
-      <div class="wrap_postInfo">
-        <dl>
-          <dt>번호</dt>
-          <dd>1</dd>
-        </dl>
-        <dl>
-          <dt>작성자</dt>
-          <dd>관리자</dd>
-        </dl>
-        <dl>
-          <dt>작성일</dt>
-          <dd class="postDate"></dd>
-        </dl>
-        <dl>
-          <dt>조회수</dt>
-          <dd>33</dd>
-        </dl>
-      </div>
-      <div class="wrap_marketPost">
-        <img src="./images/Sansin_Grandpa.png" alt="온몸에 나무가 자란 화가 난 돌하르방 몬스터 캐릭터">
-        <p>대충 캐릭터 가격</p>
-        <p>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명<br>대충 캐릭터 설명</p>
-      </div>
-      <div class="wrap_button">
-        <a href="kategorie1.html" class="btn_type1">목록</a>
-      </div>
-    </section>
+      <section class="cont_searchBox">
+        <div class="cont_idpwSelect">
+          <div id="underLine"></div>
+          <a href="#idSearch" class="active">아이디 찾기</a>
+          <a href="#pwSearch">비밀번호 찾기</a>
+        </div>
+        <ul>
+          <li id="idSearch" class="wrap_blind show wrap_idSearch">
+            <form name="idSearchForm" action="idSearchFinish.html" method="post" class="selectList" onsubmit="return idSearch_form()" data-netlify="true">
+              <div>
+                <label for="uname" class="wrap_uname">이름</label>
+                <input type="text" id="uname">
+              </div>
+              <div>
+                <label for="tel">전화 번호</label>
+                <input type="text" id="tel">
+              </div>
+              <button class="btn_idSearch">아이디 찾기</button>
+            </form>
+          </li>
+          <li id="pwSearch" class="wrap_blind wrap_pwSearch">
+            <form name="pwSearchForm" action="pwSearchFinish.html" method="post" class="selectList" onsubmit="return pwSearch_form()">
+              <div>
+                <label for="uid" class="wrap_uid">아이디</label>
+                <input type="text" id="uid">
+              </div>
+              <div>
+                <label for="uname1" class="wrap_uname">이름</label>
+                <input type="text" id="uname1">
+              </div>
+              <div>
+                <label for="tel1">전화 번호</label>
+                <input type="text" id="tel1">
+              </div>
+              <button class="btn_pwSearch">비밀번호 찾기</button>
+            </form>
+
+          </li>
+        </ul>
+      </section>
+    </div>
   </main>
   <footer>
     <!-- 하단 영역. 기업 정보 및 마스코트 배치 -->
@@ -86,6 +96,7 @@
     <p class="copyright">Copyright © 2023.Scatch.All right reserved</p>
   </footer>
   <script src="script/frame.js"></script>
+  <script src="script/idpwSearch.js"></script>
 </body>
 
 </html>
