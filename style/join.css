@@ -72,4 +72,5 @@ select{
   border-radius: 30px;
   background-color: white;
   font-family: 'KCCChassam';
+  cursor: pointer;
 }

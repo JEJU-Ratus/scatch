@@ -1,6 +1,8 @@
 const header = document.getElementById('header'),
 kategorie = document.querySelector('.wrap_menuKategorie'),// 상단메뉴 중 "판매캐릭터"의 상세메뉴
-kategorieMenu = document.querySelector('.menuKategorie');// 상단메뉴 중 "판매캐릭터" // 헤더 연결
+kategorieMenu = document.querySelector('.menuKategorie'),// 상단메뉴 중 "판매캐릭터" // 헤더 연결
+logout = document.getElementById('logout');
+
 let lastScrollTop = 0; //기준이되는 현재 스크롤의 위치
 
 window.addEventListener('scroll',function(){
@@ -21,3 +23,7 @@ kategorie.addEventListener('mouseenter',function(){
 kategorie.addEventListener('mouseleave',function(){
   kategorieMenu.style.backgroundColor = "rgba( 255, 255, 255, 0)";
 });
+
+logout.addEventListener('click',function(){
+  alert('로그아웃 되셨습니다.');
+})
