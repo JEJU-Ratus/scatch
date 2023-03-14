@@ -11,7 +11,7 @@
   padding: 10px;
   width: 40%;
   border-radius: 20px;
-  background-color: #b9d8fe;
+  background-color: white;
   position: relative;
 }
 h2{
@@ -43,7 +43,7 @@ h2{
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  background-image: url('../images/profileImsi.png');
+  background-image: url('../images/profileImg.png');
   background-repeat: no-repeat;
   background-size: contain;
 }
