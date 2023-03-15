@@ -19,10 +19,7 @@
   color: white;
 }
 legend{ /* 회원가입 창 제목 */
-  text-align: center;
-  font-size: 1.8rem;
-  color: rgb(78, 93, 76);
-  font-family: 'KCCChassam';
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0)
 }
 label{
   font-family: 'KCCChassam';

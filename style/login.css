@@ -21,9 +21,7 @@
   color: white;
 }
 .cont_login legend{ /* 로그인에 대한 제목 */
-  font-size: 1.8rem;
-  color: rgb(78, 93, 76);
-  font-family: 'KCCChassam';
+  clip-path: polygon(0 0, 0 0, 0 0, 0 0);
 }
 .wrap_uid{
   margin-right: 10px;
