@@ -2,17 +2,29 @@
   font-family: 'KCCChassam';
 }
 
-.wrap_myPage{
+.wrap_myPage{ /* 페이지 전체 틀 */
   margin-top: 53px;
   padding-top: 10%;
+  padding-bottom: 300px;
 }
-.cont_profile{
+.wrap_profile{/* 프로필 명함 외부 틀 */
+  height: 300px;
+}
+
+.cont_profile{/* 프로필 명함 객체 틀 */
   margin: 0 auto;
-  padding: 10px;
   width: 40%;
+  position: relative;
+}
+.cont_profile > p{
+  color:rgb(113, 138, 112);
+}
+.idCard{/* 프로필 명함 내부 디자인 */
+  padding: 20px;
   border-radius: 20px;
   background-color: white;
-  position: relative;
+  backface-visibility: hidden;
+  transition: 0.5s;
 }
 h2{
   margin-bottom: 20px;
@@ -24,15 +36,15 @@ h2{
 .cont_profile li{
   display: inline-block;
 }
-.cont_profile li:last-child::before{
+.front li:last-child::before{
   content: '';
   display: inline-block;
   background-color: black;
   width: 1px;
   height: 220px;
   position: absolute;
-  top: -61px;
-  left: 198px;
+  top: 18px;
+  left: 209px;
 }
 .cont_myInfo{
   margin-left: 20px;
@@ -52,4 +64,42 @@ h2{
   position: absolute;
   right: 20px;
   top: 20px;
+}
+
+.front{
+  position: absolute;
+}
+.back{
+  width: 447px;
+  height: 255px;
+  position: absolute;
+  transform: rotateY(180deg);
+}
+/* 뒷면 */
+.btn_editSite{
+  display: none;
+  margin-left: 39%;
+  margin-bottom: 300px;
+  border: none;
+  border-radius: 20px;
+  padding: 20px 100px;
+  background-color: #3E8CEC;;
+  color: white;
+}
+.siteSet{
+  position: relative;
+}
+.siteInputBox{
+  position: absolute;
+  top: 0;
+  display: none;
+}
+.siteList li{
+  display: block;
+  margin-bottom: 10px;
+}
+input{
+  margin-bottom: 10px;
+  width: 265px;
+  font-size: 0.8rem;
 }
