@@ -96,7 +96,10 @@ h2{
 }
 .siteList li{
   display: block;
-  margin-bottom: 10px;
+  margin-bottom: 11px;
+}
+.siteList li:nth-child(2){
+  margin-bottom : 10.5px
 }
 input{
   margin-bottom: 10px;
