@@ -5,7 +5,7 @@ const btn_slideLeft = document.getElementsByClassName('btn_slideLeft'),// 왼쪽
   allImg = 4; // 모든 이미지의 수
 
 let countImg = 0, // 현재 노출 이미지 번호
-  timer = setInterval(auto_slide, 8000), // 슬라이드 자동.
+  timer = setInterval(auto_slide, 4000), // 슬라이드 자동.
   powerOnOff = 1;
 
 
@@ -25,7 +25,7 @@ let countImg = 0, // 현재 노출 이미지 번호
         for(i=0;i<playPause.length;i++){
           playPause[i].src = "images/pause.png";
         }
-        timer = setInterval(auto_slide, 8000) // 재생
+        timer = setInterval(auto_slide, 4000) // 재생
       }
     })
   }
@@ -64,7 +64,7 @@ function adjust_countImg() {
   cont_mainSlide.style.transform = `translate(${countImg * (-100)}vw)`;
   clearInterval(timer);
   if(powerOnOff >0){
-    timer = setInterval(auto_slide, 8000);
+    timer = setInterval(auto_slide, 4000);
   }
 }
 
